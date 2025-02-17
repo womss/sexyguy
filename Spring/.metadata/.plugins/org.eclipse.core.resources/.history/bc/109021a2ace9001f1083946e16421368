@@ -1,0 +1,83 @@
+package com.beaver.feb122.test;
+
+
+	import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+
+	import javax.servlet.http.HttpServletRequest;
+
+	import org.apache.ibatis.session.SqlSession;
+	import org.springframework.beans.factory.annotation.Autowired;
+	import org.springframework.stereotype.Service;
+
+	@Service
+	public class TestDAO {
+		
+		@Autowired
+		private SqlSession ss; // 여기 공부 필요
+		
+		public void regTest(Test t, HttpServletRequest req) { // 입력받은(input) 값을 담고있는 시험 객체, 요청파라미터
+			try {
+				
+				TestMapper tm = ss.getMapper(TestMapper.class);
+				// View 파라미터 3개(s_y, s_m, s_d)
+				//				(=> 다 따로따로 존재 하기에 s_date 합쳐줄리 만무하다)
+				String s_y = req.getParameter("s_y");
+				
+				// 2025 1 1
+				// 202511 => 2025년 11월 ? 2025년 1월 1일 ?
+				// SimpleDateFormat
+				int s_m = Integer.parseInt(req.getParameter("s_m"));
+				int s_d = Integer.parseInt(req.getParameter("s_d"));
+				String s_date2 = String.format("%s%02d%02d", s_y, s_m, s_d);
+				SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
+				
+				Date s_date = sdf.parse(s_date2);
+				t.setS_date(s_date); // Test t 값에 세터로
+				
+				// 매퍼 xml에 접근하기 위해서는
+				if (ss.getMapper(TestMapper.class).regTest(t) == 1) {
+					req.setAttribute("r", "시험 등록 성공");
+				}
+				
+			} catch (Exception e) {
+				e.printStackTrace();
+				req.setAttribute("r", "시험 등록 실패");
+			}
+		}
+		
+		// 
+		public void getAllTest(HttpServletRequest req) {	// 어떤 요청이 들어왔고
+			try {	//maper를 끌고와서
+				req.setAttribute("tests", ss.getMapper(TestMapper.class).getAllTest()); // 여기 공부 필요
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
+		// 날짜 변환
+		public void setDate(HttpServletRequest req) {
+			
+			try {
+				TestMapper tm = ss.getMapper(TestMapper.class);
+
+				int y = Integer.parseInt(req.getParameter("s_y"));
+				int m = Integer.parseInt(req.getParameter("s_m"));
+				int d = Integer.parseInt(req.getParameter("s_d"));
+				String testDay = String.format("%s%02d%02d", y, m, d);
+				SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");		// 이거 추가
+				Date s_date = sdf.parse(testDay);								// 이거 추가
+				if (s_date != null) {
+					req.setAttribute("rrr", "날짜 등록 성공");
+					req.setAttribute("s_date", s_date);
+					
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+				req.setAttribute("rrr", "날짜 등록 실패");
+			}
+		}
+
+	}
+

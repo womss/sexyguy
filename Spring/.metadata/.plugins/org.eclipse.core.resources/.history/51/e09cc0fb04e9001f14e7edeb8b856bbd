@@ -1,0 +1,21 @@
+package com.beaver.feb122.student;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class StudentController {
+	
+	@Autowired
+	private StudentDAO sDAO;
+	
+	public String regStudent(Student s, HttpServletRequest req) {
+		sDAO.regStudent(s, req);
+		return "index";
+	}
+	
+	
+	
+}

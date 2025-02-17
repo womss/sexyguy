@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "wide"; /* 폰트 불러올 이름 */
+	src: url("wide.ttf");
+}
+::-webkit-scrollbar {
+	display: none;
+}
+body {
+	font-family: "wide";
+	margin: 0px;
+	padding: 0px;
+	/* html 기본 여백 없애기 */
+	/* margin : 바깥쪽 여백 / padding: 안쪽 여백 */
+}
+
+#siteTitleArea {
+	border-spacing: 0px; /* td간의 간격 */
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+}
+
+#siteMenuArea {
+	background-color: #FFCCFF55;
+	font-size: 30pt;
+}
+
+#siteMenuArea table {
+	width: 100%;
+}
+
+#siteMenuArea td {
+	width: 25%;
+	text-align: center;
+}
+
+#siteMenuArea a {
+	text-decoration: none;
+	color: teal;
+	font-weight: 500;
+	/* 애니메이션 효과 */
+	/* 속성명 시간 (ease-in / ease-out) */
+	
+	transition: all 0.2s ease-in;
+}
+
+#siteMenuArea a:hover {
+	font-size: 25pt;
+	text-shadow: yellow 0px 0px 10px;
+	text-decoration: underline;
+}
+
+#siteMenuArea a:active {
+	color: blue;
+}
+
+#siteTitle {
+	background-color: #FFCCFF55;
+	font-size: 30pt;
+	color: black;
+	text-shadow: teal 3px 5px 5px;
+	width: 1000px;
+}
+
+#siteContentArea {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto; /* 가운데 정렬 */
+	margin-top: 200px; 	
+}
+
+#trump {
+	/* 객체 자체에 그림자 효과 */
+	box-shadow: black 5px 5px 10px;
+	
+	max-width: 30%;
+}
+/**/
+.dataTr4 {
+	background-color: rgb(0, 64, 128);
+}
+.dataTr4-1 {
+	background-color: red;
+}
+.dataTr3 {
+	background-color: white;
+}
+.dataTr2 {
+	background-color: red;
+}
+.dataTr1 {
+	background-color: white;
+}
+/*이거는 전체*/
+#siteContentArea td:hover { 
+	text-decoration: underline;
+}
+
+#Tbl {
+	width: 1500px;
+	height: 80px;
+}
+
+
+#Tbl .dataTr {
+	border:1;
+	width:500px;
+	height:100px;
+	
+	
+}
+
+.dataTr td {
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.dataTr {
+	text-align: center;
+	
+}
+	
+.TTbl {
+	border: silver solid 3px;
+	border-radius: 10px;
+	box-shadow: darkblue 3px 3px 5px;
+	font-size: 20pt;
+	float: left;
+	margin-left: 30px;
+	margin-right: 30px;
+	margin-bottom: 0;
+	margin-top: 100px;
+}
+
+.TTbl img {
+	max-height: 250px;
+	box-shadow: navy 0px 0px 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>트렌디한 음료 자판기</title>
+    <style>
+        @font-face {
+            font-family: "wide";
+            src: url("wide.TTF");
+        }
+
+        body {
+            background: linear-gradient(to bottom, #f7f6f4, #eaeaea); /* 뉴트럴 톤 배경 */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        #sell {
+            border: 2px solid #ccc;
+            border-radius: 15px;
+            font-size: 20px;
+            text-align: center;
+            background-color: #ffffff; /* 깔끔한 화이트 배경 */
+            width: 800px;
+            padding: 20px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* 부드러운 그림자 */
+        }
+
+        #sell td {
+            padding: 10px;
+        }
+
+        #bottom {
+            margin-top: 20px;
+        }
+
+        #buy, #rest {
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            text-align: center;
+            background-color: #f9f9f9; /* 연한 회색 배경 */
+            width: 150px;
+            height: 50px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        #buy:hover, #rest:hover {
+            background-color: #eaeaea; /* 호버 시 약간 어두운 색으로 */
+            cursor: pointer;
+        }
+
+        label {
+            cursor: pointer;
+            padding: 0.5rem;
+            font-size: 16px;
+            color: #4a4a4a; /* 뉴트럴한 글자 색상 */
+            text-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+        }
+
+        label:hover {
+            color: #0078d4; /* 트렌디한 블루 색상 */
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        td {
+            font-size: 16px;
+        }
+
+        .price {
+            color: #6b6b6b; /* 가격 텍스트의 부드러운 색상 */
+        }
+
+    </style>
+    <script type="text/javascript">
+        let coin = 0;
+
+        function 구매500() {
+            alert(`콜라를 구매합니다 현재 투입된 잔액 : ${coin -= 500}원`);
+        }
+        function 구매700() {
+            alert(`사이다를 구매합니다 현재 투입된 잔액 : ${coin -= 700}원`);
+        }
+        function 구매1000() {
+            alert(`닥터페퍼를 구매합니다 현재 투입된 잔액 : ${coin -= 1000}원`);
+        }
+        function 구매2000() {
+            alert(`맥주를 구매합니다 현재 투입된 잔액 : ${coin -= 2000}원`);
+        }
+        function 구매3000() {
+            alert(`소주를 구매합니다 현재 투입된 잔액 : ${coin -= 3000}원`);
+        }
+
+        function 원100() {
+            alert(`100원을 넣었습니다 현재 투입된 금액 : ${coin += 100}원`);
+        }
+        function 원500() {
+            alert(`500원을 넣었습니다 현재 투입된 금액 : ${coin += 500}원`);
+        }
+        function 원1000() {
+            alert(`1000원을 넣었습니다 현재 투입된 금액 : ${coin += 1000}원`);
+        }
+        function 잔돈반환() {
+            alert(`${coin}원을 거슬러 받았습니다 투입된 금액 : ${coin = 0}`);
+        }
+    </script>
+</head>
+
+<body>
+    <table id="sell">
+        <tr>
+            <td>콜라</td>
+            <td>사이다</td>
+            <td>닥터페퍼</td>
+            <td>맥주</td>
+            <td>소주</td>
+        </tr>
+        <tr>
+            <td class="price">500원</td>
+            <td class="price">700원</td>
+            <td class="price">1000원</td>
+            <td class="price">2000원</td>
+            <td class="price">3000원</td>
+        </tr>
+        <tr>
+            <td><label onclick="구매500();">구매</label></td>
+            <td><label onclick="구매700();">구매</label></td>
+            <td><label onclick="구매1000();">구매</label></td>
+            <td><label onclick="구매2000();">구매</label></td>
+            <td><label onclick="구매3000();">구매</label></td>
+        </tr>
+    </table>
+    <table id="bottom">
+        <tr>
+            <td id="buy" onclick="원100();">100원</td>
+            <td id="buy" onclick="원500();">500원</td>
+            <td id="buy" onclick="원1000();">1000원</td>
+        </tr>
+        <tr>
+            <td id="rest" colspan="3" onclick="잔돈반환();">잔돈 반환</td>
+        </tr>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+package com.beaver.feb171.fruit;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class FruitDAO {
+
+	@Autowired
+	private SqlSession ss;
+	
+	public void getAllFruit(HttpServletRequest req) {
+		try {
+			List<Fruit> fruit = ss.getMapper(FruitMapper.class).getAllFruit();
+			req.setAttribute("fruits", fruit);
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+	
+	
+}

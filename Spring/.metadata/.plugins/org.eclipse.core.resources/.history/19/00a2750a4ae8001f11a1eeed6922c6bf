@@ -1,0 +1,11 @@
+package com.beaver.feb113.calc;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.beaver.feb113.calc.CalcDAO;
+
+public class CalcController {
+	@Autowired
+	private CalcDAO cDAO;
+
+}

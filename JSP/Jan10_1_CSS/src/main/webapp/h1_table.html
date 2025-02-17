@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>h1_table</title>
+</head>
+<body>
+	<!--
+		<table> : HTML에서 표를 만들 때 사용하는 태그
+			하위 태그 : <tr>, <th>, <td>
+			<tr>은 'table row'의 약자, 테이블의 행을 표현
+			<td>는 'table data'의 약자,
+				테이블에 들어가는 데이터, 셀을 의미함
+			즉, 하나의 테이블 안에 <tr> 태그를 이용해서 데이터를 표현
+				그 안에 <td> 태그를 이용해서 데이터를 표현
+			<th>는 'table header'의 약자, 테이블의 타이틀을 표현
+			* 속성
+			border(테두리), width(가로), height(세로) : <table>
+			align, valign : 정렬방법 / <td>, <th> - 수평 수직 정렬 
+				align : left, center, right
+				valign : top, middle, bottom
+			colspan, rowspan : (셀 합병 / <td>)
+				속성값으로 몇 칸 합병할지 "숫자값"
+	-->	
+	<!--
+		
+<style >
+		 table 
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+            transition: all 0.3s ease; /* 부드러운 전환 효과 */
+        }
+      
+        /* 호버 시 배경색 변경 */
+        td:hover {
+            background-color: yellowgreen; /* 연한 파란색 */
+            color: #c94c4c; /* 채도 낮은 빨간색 */
+            font-size: 1.1rem; /* 글씨 크기 약간 증가 */
+        }
+         
+</style>
+	-->
+	<style >
+		 table 
+			 
+        td {
+           
+            transition: all 0.3s ease; /* 부드러운 전환 효과 */
+        }
+      
+        /* 호버 시 배경색 변경 */
+        td:hover {
+            background-color: yellowgreen; /* 연한 파란색 */
+            color: #c94c4c; /* 채도 낮은 빨간색 */
+            font-size: 1.1rem; /* 글씨 크기 약간 증가 */
+        }
+        table tr td table td:hover {
+			 background-color: yellowgreen; /* 연한 파란색 */
+            color: #c94c4c; /* 채도 낮은 빨간색 */
+            font-size: 1.1rem; /* 글씨 크기 약간 증가 */
+		}
+         
+</style>
+	<table border="1", width="300", height="300">
+		<tr>
+			<td align="center"><font size="20">1</font></td>
+			<td align="reft"><font size="20">2</font></td>
+		</tr>
+		<tr>
+			<td align="reft"><font size="20">3</font></td>
+			<td align="reft"><font size="20">4</font></td>
+		</tr>
+	</table>
+	<hr>
+	<table border="1", width="300", height="300">
+		<tr>
+			<td align="center", fontsize="50"><font size="20">ㄱ</font></td>
+			<td align="center", valign="top"><font size="20">ㄹ</font></td>
+		</tr>
+		<tr>
+			<td align="center", valign="top"><font size="20">ㄴ</font></td>
+			<td align="center", valign="bottom"><font size="20">ㅁ</font></td>
+		</tr>
+		<tr>
+			<td align="right", valign="top"><font size="20">ㄷ</font></td>
+			<td align="reft", valign="bottom"><font size="20">ㅂ</font></td>
+		</tr>
+	</table>
+	<hr>
+	<table border="1", width="300", height="300">
+		<tr>
+			<td colspan="2"> </td>
+			<td rowspan="2"> </td>
+			
+		</tr>
+		<tr>
+			<td rowspan="2"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+			
+		</tr>
+	</table>
+	<!-----------------------------
+	-------------------------------------------->
+	<hr>
+	<table border="1", width="300", height="300">
+		<tr>
+			<td colspan="2"><a href></a></td>
+			<td rowspan="2"></td>
+			
+		</tr>
+		<tr>
+			<td rowspan="4"></td>
+			<td align="center" >
+				<table border="1" width="90%" height="90%">
+					<tr>
+						<td align="center"></td>
+						<td align="center"></td>
+			
+					</tr>
+					<tr>
+						<td align="center"></td>
+						<td align="center"></td>
+			
+					</tr>
+				</table>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"></td>
+			
+		</tr>
+	</table>
+</body>
+</html>

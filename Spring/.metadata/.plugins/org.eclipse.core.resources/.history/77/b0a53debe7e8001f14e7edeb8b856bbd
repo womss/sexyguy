@@ -1,0 +1,22 @@
+package com.beaver.feb121.main;
+
+// Java 전세계적으로 많이 사용
+//		개발자들이 본인이 만들어 놓은 것들을 공유!(라이브러리)
+//		소스 자체를 공유 X, .jar파일 만들어서 공유하는 문화 O
+//		.jar파일을 자동으로 관리해주는 시스템 : Maven
+//		Maven 중앙 저장소 : https://mvnrepository.com/
+
+// Maven을 활용하면
+//		Maven 중앙 저장소에 저장되어있는 .jar파일
+//		컴퓨터의 Maven 로컬저장소(에 저장하여 사용가능) : C:\Users\sdedu\.m2\repository
+
+// Maver 중앙저장소에 없는 것들 : 로컬 저장소를 활용하면 됨 !
+//	DBManager, HttpClient, ...
+////////////////////////////////////////////////////////////////////
+
+
+
+
+public class MMain {
+	
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<!--
+		form +button 조합
+		제목, 이미지파일, 알집파일 정보를 담아서
+		Output(서브릿으로 보낼건데)에서 각각의 데이터들을 출력
+	-->
+	<!--
+		파일처리(세가지 조건이 갖추어져야 함)웹앱 안에 폴더(img) 하나 만들기
+		1) 파일이 업로드가 될 폴더 하나
+		2) POST 방식 (주소에 데이터를 담는 GET방식 요청이 파일 소화 못함)
+		3) 기존 시스템이 글자는 인코딩, 디코딩 전송이 가능 O
+					파일은 인코딩을 할 줄 모름!!!!
+			=> 기존에 쓰던 방식과는 다른 방식(cos.jar)으로 인코딩해서 전송 , 디코딩...
+			cos.jar => WEB-INF - lib 폴더에 붙여넣기 (전(프로퍼티스)과는 다른 훨씬 간단)
+			ㅋ => 1010 인코딩 서버로 가는데 이미지는 안됨 그걸 가능하게 해주는게 cos.jar
+	-->
+	
+	<!--
+		enctype="multipart/form-data" :
+			<form> 요소가 파일이나 이미지를 서버로 전송할 때 사용!
+			enctype : encoding type
+	-->
+	
+	<form action="Output" method="post" enctype="multipart/form-data">
+		제목 <input name="title">	<p>
+			사진 <input type="file" name="photo">
+			기타 <input type="file" name="etc">
+			<hr>
+			<button>확인</button>
+	</form>
+
+</body>
+
+</html>

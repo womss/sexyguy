@@ -1,0 +1,51 @@
+package com.beaver.feb122.student;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class StudentDAO {
+	
+	@Autowired
+	private SqlSession ss;
+	
+	// SqlSessionTemplate
+	//	SqlSession의 하위클래스
+	//	뜯어본다면 (public class SqlSessionTemplate implements SqlSession)의 구조
+	//		=> SqlSession의 기능은 다 들어있고 뭔가 더 추가됨
+	//		=> 자동연결 / 자동해제 / 자동 commit
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

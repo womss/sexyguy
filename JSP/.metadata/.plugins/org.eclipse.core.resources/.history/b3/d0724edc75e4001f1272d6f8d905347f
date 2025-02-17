@@ -1,0 +1,31 @@
+package com.beaver.feb061.sns;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/dateController")
+public class dateController extends HttpServlet {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// 현재 연도를 설정
+		DateManager.getCurYear(request);
+
+		// 현재 연도를 기준으로 100년치 데이터를 JSP로 전달
+		int currentYear = Integer.parseInt((String) request.getAttribute("cy"));
+		StringBuilder yearsBuilder = new StringBuilder();
+		for (int i = currentYear; i >= currentYear - 100; i--) { // 현재 년도부터 현재 년도의 100년전까지의 년마다
+			yearsBuilder.append("<option value=" + i + ">" + i + "</option>");
+		}
+		request.setAttribute("years", yearsBuilder.toString());
+
+		// JSP로 포워딩
+		request.getRequestDispatcher("SNS.jsp").forward(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// POST 요청 처리 시 필요에 따라 구현
+	}
+}

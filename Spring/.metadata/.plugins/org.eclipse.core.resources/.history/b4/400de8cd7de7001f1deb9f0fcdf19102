@@ -1,0 +1,6 @@
+package com.beaver.feb102.cat;
+
+public class Cat {
+	private String name;
+	private int age;
+}

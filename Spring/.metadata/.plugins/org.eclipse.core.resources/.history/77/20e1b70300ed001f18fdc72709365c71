@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.beaver.feb171.fruit.FruitMapper">
+	
+	<select id="getAllFruit" resultType="com.beaver.feb171.fruit.Fruit"> <!-- 셀렉문을 눌렀을때의 결과가 과일객체가 나오게 됨 -->
+		select * from feb17_fruit order by f_price
+	</select>
+	<select id="searchFruit" resultType="com.beaver.feb171.fruit.Fruit">
+    select * from feb17_fruit where f_price &lt;= ? order by f_price
+	</select>
+	
+</mapper>

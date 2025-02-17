@@ -1,0 +1,32 @@
+package com.beaver.feb113.calc;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.beaver.feb113.calc.CalcResult;
+import com.beaver.feb113.calc.CalcDAO;
+
+//@Controller
+public class CalcController {
+	
+//	@Autowired
+//	private CalcDAO cDAO;
+//	@Autowired
+//	private CalcResult cr; 
+
+	
+	@RequestMapping(value = "unit.convert", method = RequestMethod.GET)
+	public String calcXY(CalcResult cr, HttpServletRequest req) { // on
+		CalcDAO cDAO = new CalcDAO();
+		cDAO.calculate(cr, req);
+		
+		return "output";
+	}
+	
+	
+	
+}

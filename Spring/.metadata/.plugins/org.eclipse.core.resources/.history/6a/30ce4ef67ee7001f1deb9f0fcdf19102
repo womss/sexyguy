@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- 	<bean id="d" class="com.beaver.feb102.dog.Dog"></bean>
+	<bean id="d2" class="com.beaver.feb102.dog.Dog">
+		<property name="name" value="개님" />
+		<property name="age" value="40" />
+	</bean>
+	<bean id="d3" class="com.beaver.feb102.dog.Dog">
+		<constructor-arg value="개느님" />
+		<constructor-arg value="999" />
+	</bean>
+ -->	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</beans>

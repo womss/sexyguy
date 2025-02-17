@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@font-face {
+	font-family: "wide";
+	src: url("wide.TTF")
+}
+
+body {
+	background-color: black;
+}
+#siteTitle {
+	color: white;
+}
+
+#siteTbl {
+	margin-left: auto;
+	margin-right: auto;
+	width: 1000px;
+}
+
+#siteMenu {
+	border-top: black solid 3px;
+	border-bottom: black solid 3px;
+}
+#siteMenu a {
+	color: white;
+	font-size: 30pt;
+	font-weight: 300;
+}
+
+#homeTbl {
+	color: red;
+	text-shadow: teal 5px 5px 5px;	
+	margin-left: auto;
+	right: 800px;
+}	
+#homeTbl2 {
+	color: red;
+	text-shadow: pink 5px 5px 5px;	
+	left: 0px;	
+}
+
+
+
+
+

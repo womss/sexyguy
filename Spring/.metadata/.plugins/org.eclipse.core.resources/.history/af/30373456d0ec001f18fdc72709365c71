@@ -1,0 +1,8 @@
+package com.beaver.feb171.fruit;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class fruitController {
+
+}

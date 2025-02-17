@@ -1,0 +1,108 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "wide"; 
+	src: url("wide.TTF");
+}
+::-webkit-scrollbar {
+	display: none;
+}
+body {
+	font-family: "wide";
+	
+	/* html 기본 여백 없애기 */
+	/* margin : 바깥쪽 여백 / padding: 안쪽 여백 */
+}
+
+#main1 {
+	font-size: 30px;
+	font-family: wide;
+	text-align: center;
+	border: 3px solid paleturquoise;
+	border-radius: 10px;
+	width: 300px;
+	height: 100px;
+	margin-top: 50px;
+}
+
+#main2 {
+	font-family: wide;
+	padding: 30px;
+	border: 3px solid #ddd;
+	border-radius: 10px;
+	font-size: 24px;
+	text-align: center;
+	background-color: aliceblue;
+	width: 800px;
+	height: 200px;
+	margin-top: 100px;
+}
+
+label {
+	border: 3px solid #ddd;
+	border-radius: 10px;
+	background-color: lightsteelblue;
+	cursor: pointer;
+	width: 180px;
+	height: 120px;
+}
+
+input {
+	border: none;
+	border-radius: 10px;
+	background-color: transparent;
+	height: 30px;
+}
+
+input photo {
+	border: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

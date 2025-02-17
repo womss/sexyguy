@@ -1,0 +1,12 @@
+package com.beaver.feb111.member;
+
+public class MemberDAO {
+	
+	// Spring - MyBatis - Maven
+	//	유지보수에 용이
+	
+	// 클라이언트가 회원에대한 정보를 등록했을때 회원가입을 한 시간을
+	//	연/월/일 의 형태로 요청
+	
+	
+}

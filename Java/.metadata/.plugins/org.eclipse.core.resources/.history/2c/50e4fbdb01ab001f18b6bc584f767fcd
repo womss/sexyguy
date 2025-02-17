@@ -1,0 +1,45 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class FMain5 {
+
+	// 동전 맞추기 게임
+	// 10개
+	
+	// 개수 몇개인지 입력
+	// 컴퓨터 몇개인지 발표
+	// 사용자랑답이랑 컴퓨터 답이랑 맞는지 비교
+	// 결과 출력
+	
+	public static String userAn() {		// 유저의 개수 예측
+		Scanner k = new Scanner(System.in);
+		System.out.print("동전 갯수는? (1~10개 사이) : ");
+		String useran = k.next();
+		return useran;
+		
+	}
+	
+	
+	public static int aiAn() {			// ai의 동전개수 발표
+		Random r = new Random();
+		int aicoin = r.nextInt(10)+1;
+		return aicoin;
+		
+	}
+	
+	public static String userAiAn(String ucoin, int aicoin) {		// 유저와 ai의 답이 맞는지
+		String userAiAn = (ucoin.equals(aicoin)) ? "정답" : "실패";
+		return userAiAn;
+	}
+	
+	
+	
+	
+	public static void main(String[] args) {
+		String ucoin = userAn();
+		int aicoin = aiAn();
+		result = (ucoin, aicoin);
+	}
+	
+	
+}

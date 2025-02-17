@@ -1,0 +1,15 @@
+package com.beaver.feb122.student;
+// db관련해서 mybatis를 써보겠습니다
+// MyBatis : ORM(Object Relationship Mapping) Framework
+//	=> 객체와 데이터베이스의 데이터를 자동으로 연결(매핑)해주는 Framework
+//	=> 결과를 자바 객체로
+//		DB컬럼명 = Java멤버변수명 같아야함 (조건)
+// Spring MVC : 요청파라미터를 자동으로 객체로...
+//		요청파라미터명 = Java멤버변수명 같아야함 (조건)
+
+//Spring MVC + Maven + MyBatis
+//		요청파라미터명 = Java멤버변수명 = DB컬럼명 (조건) ****
+
+public class Student {
+
+}

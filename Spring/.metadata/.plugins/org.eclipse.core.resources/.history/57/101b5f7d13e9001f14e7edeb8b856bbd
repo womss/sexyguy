@@ -1,0 +1,5 @@
+package com.beaver.feb122.test;
+
+public interface TestMapper {
+
+}

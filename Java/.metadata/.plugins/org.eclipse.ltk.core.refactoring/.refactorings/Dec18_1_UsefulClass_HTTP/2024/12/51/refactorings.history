@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Dec18_1_UsefulClass_HTTP&apos;&#x0D;&#x0A;- Original project: &apos;Dec18_1_UsefulClass_HTTP&apos;&#x0D;&#x0A;- Original element: &apos;com.beaver.dec181.main.BeaverHttpClient.java&apos;" description="Delete element" element1="/src&lt;com.beaver.dec181.main{BeaverHttpClient.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1734484953054" subPackages="false" version="1.0"/>
+</session>

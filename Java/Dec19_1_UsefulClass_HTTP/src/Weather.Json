@@ -1,0 +1,45 @@
+{
+	"visibility": 10000,
+	"timezone": 32400,
+	"main": {
+		"temp": -1.06,
+		"temp_min": -1.06,
+		"grnd_level": 1030,
+		"humidity": 59,
+		"pressure": 1032,
+		"sea_level": 1032,
+		"feels_like": -3.03,
+		"temp_max": -1.06
+	},
+	"clouds": {
+		"all": 0
+	},
+	"sys": {
+		"country": "KR",
+		"sunrise": 1734561530,
+		"sunset": 1734596499,
+		"id": 8076,
+		"type": 1
+	},
+	"dt": 1734572224,
+	"coord": {
+		"lon": 126.7114,
+		"lat": 35.9786
+	},
+	"weather": [
+		{
+			"icon": "01d",
+			"description": "맑음",
+			"main": "Clear",
+			"id": 800
+		}
+	],
+	"name": "Gunsan",
+	"cod": 200,
+	"id": 1842025,
+	"base": "stations",
+	"wind": {
+		"deg": 130,
+		"speed": 1.54
+	}
+}

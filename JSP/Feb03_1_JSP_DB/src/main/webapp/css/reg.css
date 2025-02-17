@@ -1,0 +1,92 @@
+@charset "UTF-8";
+
+/* 페이지 기본 스타일 */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 폼 컨테이너 */
+form {
+    background: #ffffff;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
+    width: 420px;
+    text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* 제목 */
+h1 {
+    text-align: center;
+    color: #222;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+table {
+}
+
+
+/* 입력 필드 공통 스타일 */
+input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* 입력 필드 포커스 효과 */
+input:focus, select:focus, textarea:focus {
+    border-color: #4CAF50;
+    box-shadow: 0px 0px 5px rgba(76, 175, 80, 0.3);
+    outline: none;
+}
+
+/* 텍스트 에어리어 크기 조정 */
+textarea {
+    resize: none;
+    height: 90px;
+}
+
+/* 버튼 그룹 - 가운데 정렬 */
+.button-group {
+    text-align: center;  /* 텍스트와 버튼을 가로로 중앙 정렬 */
+    margin-top: 20px;
+}
+
+/* 버튼 스타일 */
+.btn {
+    display: inline-block;  /* 버튼을 블록처럼 정렬 */
+    width: 100px;          /* 버튼 크기 고정 */
+    background: #4CAF50;   /* 버튼 색상 */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin: 0 5px;         /* 버튼 간격 추가 */
+}
+
+/* 버튼 호버 효과 */
+.btn:hover {
+    background: #45a049;
+    transform: scale(1.05);
+}
+
+/* 버튼 클릭 효과 */
+.btn:active {
+    background: #3e8e41;
+    transform: scale(0.98);
+}

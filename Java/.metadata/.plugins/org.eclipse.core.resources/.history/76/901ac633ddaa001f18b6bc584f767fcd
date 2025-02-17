@@ -1,0 +1,35 @@
+
+public class FMain3 {
+
+	// 비만도 검사 프로그램 (함수.ver)
+	
+	// 키(cm), 몸무게는(kg)는 입력받을 것
+	// 표준체중 = (키 - 100) * 0.9
+	// 비만도 = (실제체중 / 표준체중) * 100
+	// 비만도가 120이 넘으면 '비만, 아니면 '안비만'
+	//	을 판정한 후 전체 결과를 출력
+	//		ㄴ 이거를 함수로
+	public static void height (double a,double b) {
+		System.out.println("________________________");
+		System.out.printf("사용자의 키는 %.1fcm이고,\n몸무게는 %.1fkg 입니다.\n따라서");
+		double ever = (a-100) * 0.9;
+		double fat = (b/a) * 100;
+		System.out.printf("사용자의 표준 체중은 %.1fkg이고,\n비만도는 %.1f입니다", ever,fat);
+		String result = (fat>120 ? "비만입니다" : "비만이 아닙니다");
+		System.out.printf("사용자는 %s입니다\n");
+		
+		
+		
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		height(178.2,70.2);
+		double a =178.2;
+		double b =178.2;
+		
+	}
+	
+	
+}

@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class RMain2_1 {
+	public static void main(String[] args) {
+		// 누구 : 
+		//		매니저
+		//			시스템관리
+		//			학생관리
+		//			수업관련 업무
+		//		강사
+		//			학생관리
+		//			수업관련 업무
+		//		학생
+		//			수업관련 업무
+		//	를 반복하다가 "끝이라고 입력하면 프로그램 종료 if + break
+		
+		Scanner k = new Scanner(System.in);
+		String role = nu;				// null 애매 / 상태를 표시하기위한 값
+		while (!role.equals("끝")) {
+			System.out.println("asdf");
+		}
+		
+		
+		
+	}
+}

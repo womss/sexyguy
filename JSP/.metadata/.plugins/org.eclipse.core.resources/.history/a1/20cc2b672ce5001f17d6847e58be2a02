@@ -1,0 +1,338 @@
+package com.beaver.feb061.sns;
+
+import java.io.File;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.text.SimpleDateFormat;
+
+import javax.servlet.http.Cookie;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.beaver.db.manager.BeaverDBManager;
+import com.oreilly.servlet.MultipartRequest;
+import com.oreilly.servlet.multipart.DefaultFileRenamePolicy;
+
+public class MemberDAO {
+	
+	// 회원가입
+	public static void signup(HttpServletRequest req) {
+		// 일단 파일업로드 시도
+		String path = null;
+		MultipartRequest mr = null;
+		
+		try {
+			path = req.getServletContext().getRealPath("img");
+			System.out.println(path);
+			mr = new MultipartRequest(req, path, 10 * 1024 * 1024, "UTF-8", new DefaultFileRenamePolicy());
+		} catch (Exception e) {	// 파일 업로드 실패의 경우
+			e.printStackTrace();
+			req.setAttribute("r", "회원가입 실패(사진파일 용량 초과)");
+			return;	// 업로드에 실패하면 뒤에 남은 DB작업
+					//	은 하짐 말자 (강제종료)
+		}
+		
+		// 파일 업로드 성공시에 계속 진행
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		try {
+			con = BeaverDBManager.connect("sexy");
+			
+			String id = mr.getParameter("id");
+			String pw = mr.getParameter("pw");
+			String name = mr.getParameter("name");
+			String phone = mr.getParameter("phone");
+			
+			String y = mr.getParameter("y");
+//			int y = Integer.parseInt(mr.getParameter("y"));
+			int m = Integer.parseInt(mr.getParameter("m"));
+			int d = Integer.parseInt(mr.getParameter("d"));
+			String birthday = String.format("%s%02d%02d", y, m, d);
+			System.out.println("생년월일: " + birthday);
+			String photo = mr.getFilesystemName("photo");
+			if (photo != null) {
+			    photo = URLEncoder.encode(photo, "UTF-8").replace("+", " ");
+			} else {
+			    photo = "cat.png";  // 기본 이미지 설정
+			}
+			
+			String sql = "insert into feb06_member values( "
+					+ "?, ?, ?, ?, to_date(?, 'YYYYMMDD'), ?)";
+			pstmt = con.prepareStatement(sql);
+			
+			pstmt.setString(1, id);
+			pstmt.setString(2, pw);
+			pstmt.setString(3, name);
+			pstmt.setString(4, phone);
+			pstmt.setString(5, birthday);
+			pstmt.setString(6, photo);
+			
+			if (pstmt.executeUpdate() == 1) {
+				req.setAttribute("r", "회원가입 성공");
+				
+			}
+		} catch (Exception e) {	// ID중복, DB연결상태가 안좋은 경우일겁니다
+			e.printStackTrace();
+			// DB쪽 문제로 가입은 실패지만,
+			// 현 메소드의 처음 부분) 사진파일이 업로드는 되어있는 상태
+			// 사진파일 지워줘야(Java로)
+			File f = new File(path + "/" + mr.getFilesystemName("photo"));	// 파일을 불러오고? 근데 왜 new?
+			f.delete(); // 파일은 지워버릴 거구요
+			req.setAttribute("r", "회원가입 실패, 아이디가 중복이거나 연결상태가 좋지 않습니다");
+		}
+			BeaverDBManager.close(con, pstmt, null);
+	}
+	
+	public static void login(HttpServletRequest req, HttpServletResponse res) {
+		Connection con = null;
+		// 연결 준비 -				🔹 DB와의 연결을 준비하는 객체 (아직 연결되지 않았으며, 이후 실제 연결을 수행할 예정)
+		PreparedStatement pstmt = null;
+		// 실행 준비 -				🔹 Connection을 통해 생성된 SQL 실행 준비 객체(PreparedStatement)
+		//						🔹 SQL을 미리 준비(Precompile)하고, 실행할 수 있도록 설정함
+		//						🔹  `?`(바인딩 변수)를 사용하여 동적 SQL 실행이 가능함
+		ResultSet rs = null;
+		// sql을 조회한 결과값 저장 - 🔹 SQL `SELECT` 조회 결과를 저장하는 객체
+		//						🔹 아직 데이터가 없는 상태이며, `pstmt.executeQuery();`가 실행되면 DB에서 조회된 결과를 저장함
+		//						🔹 사용자는 `rs.next()`를 사용하여 조회된 데이터를 읽을 수 있음
+		try {
+			con = BeaverDBManager.connect("sexy");
+			
+			req.setCharacterEncoding("UTF-8");
+			String id = req.getParameter("id");
+			String pw = req.getParameter("pw");
+			
+			// String sql = "select * feb06_sns"; // 비교 확인을 하려면 불러오고 비교를 해야하는데 왼쪽처럼 전부 불러오면 개수가 만개이상처럼 많아질때는 효율적이지 않음
+			// String sql = "select * feb06_sns where id=? and pw=?"; 
+			// 해킹기법 - SQL Injection (해킹 기법중 이런게 있다)
+			//		보안상 취약점을 이용해서
+			//		데이터베이스가 비정상적인 동작을 하게 하는 기법
+			//★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★★
+			
+			String sql = "select * from feb06_member where id = ?";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, id);
+			rs = pstmt.executeQuery();
+			
+			if (rs.next()) { // 데이터가 있는지 + 그 데이터를 가리키게 // 안전장치
+				String dbPw = rs.getString("pw"); // db에 있는 비밀번호와
+				if (dbPw.equals(pw)) { // 입력한 비밀번호가 같(은지)다면
+					Member m = new Member(
+							rs.getString("id"), dbPw, rs.getString("name"),
+							rs.getString("phone"), rs.getDate("birth"),
+							URLDecoder.decode(rs.getString("photo"), "UTF-8"));
+					req.getSession().setAttribute("loginMember", m);
+					req.getSession().setMaxInactiveInterval(600);
+					
+					Cookie c = new Cookie("lastLoginId", id);
+					c.setMaxAge(60 * 60 * 24 * 5);
+					res.addCookie(c);
+					req.setAttribute("r", "로그인 성공");
+				} else { // db의 비밀번호와 입력한 비밀번호가 다른경우
+					req.setAttribute("r", "로그인실패(PW오류)");
+				}
+			} else {
+				req.setAttribute("r", "로그인실패(미가입ID)");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			req.setAttribute("r", "로그인실패(DB서버)");
+		}
+		BeaverDBManager.close(con, pstmt, rs);
+	}
+	
+	// 로그인상태 확인하기위한 메소드
+	public static boolean loginCheck(HttpServletRequest req) {
+		Member m = (Member) req.getSession().getAttribute("loginMember");
+		
+		if (m != null) {
+			// 로그인 성공 or 상태 유지시
+			req.setAttribute("lp", "welcome.jsp");
+			return true;
+		}
+		// 로그인상태가 아니거나 로그인 실패시
+		req.setAttribute("lp", "login.jsp");
+		return false;
+	}
+	
+	//로그아웃
+	public static void logout(HttpServletRequest req) {
+		// 세션 끊기 : 아래처럼 끊으면 다른 세션값들도 같이 끊어지기에 비추
+		// req.getSession().setMaxInactiveInterval(-1);
+		
+		// Member에 대한 session만 null로 바꿔주면 될 것 같다
+		req.getSession().setAttribute("loginMember", null);
+		req.setAttribute("r", "로그아웃 성공");
+	}
+	
+	// 정보 수정
+	public static void update(HttpServletRequest req) {
+		// 회원가입때와 마찬가지 파일 업로드 실패하면 => 거기서 끝내기
+		String path = null;
+		MultipartRequest mr = null;
+		Member m = (Member) req.getSession().getAttribute("loginMember");
+		String old_photo = m.getPhoto();
+		String new_photo = null;
+		
+		try {
+			path = req.getServletContext().getRealPath("img");
+			System.out.println(path);
+			mr = new MultipartRequest(req, path, 10 * 1024 * 1024, "UTF-8", new DefaultFileRenamePolicy());
+			
+			new_photo = mr.getFilesystemName("photo"); // 선택한 파일명
+			if (new_photo != null) {	// 이 있으면(새로운 파일을 넣었으면)
+				new_photo = URLEncoder.encode(new_photo, "UTF-8").replace("+", " ");
+			} else {	// 이 없으면 (새로운 파일을 안넣었으면)
+				new_photo = old_photo;	// 기존의 사진을 새로운 사진으로 지정함으로써 유지
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			System.out.println("파일용량 체크");
+			return;
+		}
+		
+		// 여기까지 진행하는데 별일 없었다
+		
+		// 파일 크기가 10MB보다 적은걸로 잘 선택해서 - 파일업로드 성공
+		// 파일 선택 안해서(0MB)
+		
+		// 파일 선택을 했다 : 프사 바꾸겠다
+		//		=> 새 프사 파일명을 DB에 넣어야
+		//		=> 새 프사 파일명 확보
+		//		+ 기존 프사 파일 삭제도 해야
+		//		=> 원래 프사 파일명을 확보
+		
+		// 파일 선택을 안하면 : 프사는 안바꾸겠다
+		//		=> 기존 프사 파일명을 DB에 넣어야
+		//		=> 원래 프사 파일명을 확보
+		
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		try {
+			con = BeaverDBManager.connect("sexy");
+			
+			String id = mr.getParameter("id");
+			String pw = mr.getParameter("pw");
+			String name = mr.getParameter("name");
+			String phone = mr.getParameter("phone");
+			
+			String y = mr.getParameter("y");
+			int mm = Integer.parseInt(mr.getParameter("m"));
+			int dd = Integer.parseInt(mr.getParameter("d"));
+			String birthday = String.format("%s%02d%02d", y, mm, dd);
+			
+			String sql = "update feb06_member set pw=?, name=?, "
+					+ "birthday=to_date(?, 'YYYYMMDD'), photo=? "
+					+ "where id=?";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, pw);
+			pstmt.setString(2, name);
+			pstmt.setString(3, phone);
+			pstmt.setString(4, birthday);
+			pstmt.setString(5, new_photo);
+			pstmt.setString(6, id);
+			
+			if (pstmt.executeUpdate() == 1) {	// 정보수정에 성공했을 경우
+				req.setAttribute("r", "정보수정 성공");
+				
+				if (!new_photo.equals(old_photo)) {	// 프사를 바꿨으면
+					new File(path + "/" + URLDecoder.decode(old_photo, "UTF-8")).delete();
+				}
+				SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMdd");
+				m = new Member(id, pw, name, phone, sdf.parse(birthday), URLDecoder.decode(old_photo, "UTF-8"));
+				req.getSession().setAttribute("loginMember", m);
+			} else {	// 가 아니면
+				req.setAttribute("r", "정보수정 실패");
+				if (!new_photo.equals(old_photo)) {
+					new File(path + "/" + URLDecoder.decode(new_photo, "UTF-8")).delete();
+				}
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			req.setAttribute("r", "정보수정 실패(DB문제)");
+			try {
+				if (!new_photo.equals(old_photo)) {
+					new File(path + "/" + URLDecoder.decode(new_photo, "UTF-8")).delete();
+				}
+			} catch (Exception e2) {
+				e2.printStackTrace();
+			}
+		}
+		BeaverDBManager.close(con, pstmt, null);
+	}
+	
+	// 회원 탈퇴
+	public static void delete(HttpServletRequest req) {
+		Connection con = null;
+		PreparedStatement pstmt = null;
+		try {
+			con = BeaverDBManager.connect("sexy");
+			Member m = (Member) req.getSession().getAttribute("loginMember");
+			String id = m.getId();
+			
+			String sql = "delete feb06_member where id = ?";
+			pstmt = con.prepareStatement(sql);
+			pstmt.setString(1, id);
+			
+			if (pstmt.executeUpdate() == 1) {
+				req.setAttribute("r", "회원탈퇴 성공");
+				// DB에서 데이터는 지웠음
+				// 그 사람이 사용한 프사 => 지워야함
+				String photo = m.getPhoto();
+				photo = URLDecoder.decode(photo, "UTF-8");
+				String path = req.getServletContext().getRealPath("img");
+				File f = new File(path + "/" + photo);
+				f.delete();
+				req.getSession().setAttribute("loginMember", null);
+			} else {
+				req.setAttribute("r", "이미 탈퇴처리됨");
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+			req.setAttribute("r", "탈퇴실패(DB서버)");
+		}
+		BeaverDBManager.close(con, pstmt, null);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

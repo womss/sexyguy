@@ -1,0 +1,46 @@
+package com.beaver.feb122.test;
+
+
+	import java.util.List;
+
+	import javax.servlet.http.HttpServletRequest;
+
+	import org.apache.ibatis.session.SqlSession;
+	import org.springframework.beans.factory.annotation.Autowired;
+	import org.springframework.stereotype.Service;
+
+	@Service
+	public class TestDAO {
+		
+		@Autowired
+		private SqlSession ss;
+		
+		public void regTest(Test t, HttpServletRequest req) { // 학생 객체와 요청파라미터
+			try {
+				
+				TestMapper sm = ss.getMapper(TestMapper.class);
+				
+				if (sm.regTest(t) == 1) {// 추상메소드를 호출했을 때에 영향을 받은 데이터의 수가 하나라면
+					req.setAttribute("rr", "시험 등록 성공");
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+				req.setAttribute("rr", "시험 등록 실패");
+			}
+		}
+		
+		// DB작업 끝
+		public void getAllStudent(HttpServletRequest req) {
+			try {
+				req.setAttribute("tests", ss.getMapper(TestMapper.class).getAllTest());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+
+
+
+
+
+	}
+

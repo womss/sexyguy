@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/iinput.css">
+	<title>Insert title here</title>
+</head>
+
+<body>
+	<!--
+		회원가입 페이지
+		ID
+		PW
+		성별
+		지역
+			<select>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+		취미(복수선택 가능)
+		자기소개(textarea) + CSS까지
+		가입버튼 누르면 => 입력한 정보들이 새로운화면에 출력되게!
+									(Servlet)
+	-->
+	<table id="backgroundTbl">
+		<tr>
+			<td>
+				<div class="background-container">
+					<!-- 인풋의 id와 라벨의 for값은 같아야한다-->
+					<input type="radio" id="bg1" name="background" checked>
+					<label for="bg1">1번 배경</label>
+					
+					<input type="radio" id="bg2" name="background">
+					<label for="bg2">2번 배경</label>
+					
+					<div class="background"></div>
+				</div>
+			</td>
+		</tr>
+		
+	</table>
+	
+
+	<form action="OOutput" method="post">
+		<table id="joinTbl">
+			<tr>
+				<td colspan="2" align="center" class="joinTd">
+					회원가입
+					</td>
+			</tr>
+			<tr>
+				<td align="center" class="td1">ID</td>
+				<td>
+					<input autofocus autocomplete="off"
+					placeholder="필수, 4 ~ 8자" name="ID"
+					required class="textType"
+					oninvalid="this.setCustomValidity('ID 입력안함ㅋ')">
+				</td>
+			</tr>
+			<tr>
+				<td align="center" class="td1">PW</td>
+				<td>
+					<input type="password" autofocus autocomplete="off"
+					placeholder="필수, 4 ~ 8자" name="PW"
+					required class="textType">
+				</td>
+			</tr>
+			<tr>
+				<td align="center" class="td1">성별</td>
+				<td align="center" class="radioTd">
+					<input type="radio" checked name="GD" value="남자">남자
+					<input type="radio" name="GD" value="여자">여자
+				</td>
+			</tr>
+			<tr>
+				<td align="center" class="td1">지역</td>
+				<td>
+					<select name="LC" class="radioTd">
+						<option disabled selected>👀어디사세요?👀</option>
+						<option>서울</option>
+						<option>경기</option>
+						<option>인천</option>
+						<option>강원</option>
+						<option>충북</option>
+						<option>충남</option>
+						<option>세종</option>
+						<option>전북</option>
+						<option>전남</option>
+						<option>경북</option>
+						<option>경남</option>
+						<option>제주</option>
+					</select>
+				</td>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" class="td1">취미</td>
+				<td align="center">
+					<input type="checkbox" name="HB" value="게임">게임
+					<input type="checkbox" name="HB" value="골프">골프
+					<input type="checkbox" name="HB" value="운동">운동<br>
+					<input type="checkbox" name="HB" value="SNS">SNS
+					<input type="checkbox" name="HB" value="맛집탐방">맛집탐방
+					<input type="checkbox" name="HB" value="방콕">방콕
+				</td>
+			</tr>
+			<tr>
+				<td align="center" class="td1">자기소개</td>
+				<td>
+					<textarea name="IND"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<td align="right">
+					<button class="btn">가입</button>
+				</td> 
+				<td align="left">
+					<input type="reset" value="입력 초기화" class="btn">
+				</td>
+			</tr>
+		</table>
+		
+		
+	</form>
+</body>
+
+</html>

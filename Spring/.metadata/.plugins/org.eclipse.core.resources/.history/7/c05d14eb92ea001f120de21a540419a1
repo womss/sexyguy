@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	div {border: grey solid 3px; width: 200px; height: 200px;}
+</style>
+<script type="text/javascript" src="jQuery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		// alert('asdf');
+		
+		$("div").mousedown(function() {
+			$("h1").text("mousedown");
+		});
+		
+	});
+</script>
+</head>
+<body>
+	<div></div>
+	<h1></h1>
+	<h2></h2>
+</body>
+</html>

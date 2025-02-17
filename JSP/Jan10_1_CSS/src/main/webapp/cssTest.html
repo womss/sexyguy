@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>cssTest</title>
+<style type="text/css">
+	div {
+		color: #0000FF;
+	}
+	#weekend {
+		background-color: yellow;
+	}
+	span {
+		background-color: beige;
+	}
+	
+	.c {
+		font-weight: 100;
+	}
+	
+	h1, h2 {
+		text-decoration: overline;
+	}
+	
+	div h3 {
+		/* 그림자처리 : 색상 x축 y축 blur(번짐) */
+		text-shadow: coral 3px 3px 5px;
+	}
+	
+	h3.c {
+		/* 테두리 : 색상 선종류 두께 */
+		/* 선종류 : solid dashed dotted double inset outset croove ...*/
+		border: #99FFFF double 7px;
+		border-radius: 10px;
+	}
+	/* 글씨크기, 글씨배경, 테두리 선 */
+	#btn {	
+		font-size: 20pt;
+		background-color: #99CCFF;
+		border: lightcoral outset 5px;
+	}
+	/* 갖대 대면 테두리가 변하는 */
+	#btn:active {
+		border: lightcoral inset 5px;
+	}
+	/* 갖다 대면 해당 글씨체로 변하는 */
+	#btn:hover {
+		font-family: "궁서";
+	}
+	
+</style>
+</head>
+<body>
+	<span id="btn">금요일 !!!!!</span>
+	<h1>꺄아아아아악!!!</h1>
+	<h2>이제 곧 주말이라니 ~ !!</h2>
+	<div>
+		<h3>이거 너무 행복하네요 ^-^</h3>
+		
+	</div>
+	<h3 class="c">진짜루요 !!!</h3>
+	<div class="c">div는 이 한줄을 다 차지하구요</div>
+	<span class="c">span은 이영역만을 사용합니다</span>
+	<div id="weekend">주말님 어서오세요</div>
+	
+	<!--
+		CSS (Cascading Style Sheet)
+			: HTML DOM객체에 디자인 부여
+			
+		위치 :
+			1. .html파일의 <head></head> 안에 <style> 태그를 만들어서
+			2. DOM객체의 style 속성형태로 (비추!!!) <div id="weekend" @style=""@>주말님 어서오세요</div> @@이의 형태
+			3. .css파일을 따로 만들어서 (주력!!!)
+			
+		문법
+			선택자 {
+				속성명: 값;
+				속성명: 값;
+				...
+			}
+			
+		선택자 (selector)
+			기본형
+				태그명 - 태그명에 속하는거 전부 다!
+				#id명 - id가 지정한 값인거 (id명은 중복 사용 X !)
+				.class명 - class가 지정한 값인거 (class명은 중복 사용 O !)
+			조합형
+				선택자, 선택자, ... : 여러개 선택하겠다
+				선택자 선택자 ... : 내부 선택 내부적으로 들어가서 골라오는 경우
+				선택자.class명 : 선택자 내부의 class 선택
+			상태형 (어떤상황이 발생했을때 고를 수 있는)
+				선택자:상태
+	-->
+	
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

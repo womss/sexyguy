@@ -1,0 +1,14 @@
+package com.beaver.feb122.test;
+
+import java.util.Date;
+
+public class test {
+	private String s_subject;
+	private Date s_date;
+	
+	public test() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	
+}

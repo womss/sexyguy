@@ -1,0 +1,88 @@
+import java.util.Random;
+
+public class FMain2 {
+
+	// 랜덤한 정수를 '출력' 하는 함수
+	public static void red() {
+		Random r = new Random();
+		int i = r.nextInt(10) + 1;
+		System.out.println(i);
+	}
+	// 랜덤한 정수를 '생성' 하는 함수
+	public static int blue() {
+		Random r = new Random();
+		int i = r.nextInt(100)+1;
+		//System.out.printf("정수 생성 : %d\n",i);
+		return i; 	// i에 있는 값을 최종 결과로 뱉어내기
+					// 이 함수는 종료
+	}
+	// 정수를 하나 넣으면 홀수인지 짝수인지 출력하는 함수
+	public static void green(int a) {
+		String result = (a%2==0) ? "짝수" : "홀수";
+		System.out.printf("%d는 %s\n", a, result);
+		
+	}
+	// 정수를 두개 넣었을 때
+	// 앞 숫자가 크면 '앞', 뒷 숫자가 크거나 같으면 '뒤'를 생성하는 함수
+	public static String purple(int a, int b) {
+		String result = (a>b ? "앞" : "뒤");
+		System.out.println(ss);
+		return result;
+		
+	}
+//	public static void outInt () {
+//		Random r = new Random ();
+//		System.out.println(r.nextInt(10)+1);
+//		
+//		
+//	}
+//	
+//	public static int newint () {
+//		System.out.println("정수 생성 : ");
+//		Random r = new Random ();
+//		int newint = r.nextInt();
+//		return newint;
+//
+//		
+//		
+//	}
+//	
+//	public static void putint(int c) {
+//		String pint = ((c % 2 == 1) ? "홀수" : "짝수");
+//		System.out.println(pint);
+//		
+//	}
+//	
+//	public static void twoint(int a, int b) {
+//		String tint = (a>b) ? "앞" : "뒤";
+//		System.out.println(tint);
+//		
+//	}
+//	
+//	
+//	
+//	
+	public static void main(String[] args) {
+		red();
+		System.out.println("______________________");
+		//System.out.println(blue()); // 일회성으로 불러올 때
+		// blue()를 통해서 구해진 숫자를 i라는 그릇에 담아서 콘솔에 출력
+		int i = blue();
+		System.out.println(i);
+		System.out.println("______________________");
+		
+		// green()을 통해서 짝수인지 홀수인지 콘솔에 출력
+		green(i);
+		green(5);
+		green(8);
+		System.out.println("__________________");
+		
+		String ss = purple(10,20);
+		
+		
+	}
+//		outInt ();
+//		int newint;
+//	}
+
+}

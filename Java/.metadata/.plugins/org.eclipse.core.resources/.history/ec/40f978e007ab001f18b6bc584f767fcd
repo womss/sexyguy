@@ -1,0 +1,65 @@
+import java.util.Random;
+
+public class FMain6 {
+	
+	// B : 함수명 / 무슨 기능인지 알아볼 수있게 작명
+	//				동사화 시킨 작명
+	//				낙타체 or 뱀체
+	// C : 파라미터 / 함수를 호출하는 쪽(주로 main함수)에서
+	//				해당 함수쪽으로 데이터를 보낼 때
+	//				( 자료형 변수명, 자료형 변수명, ... )
+	// A : 리턴타입 / 해당 함수에서 작업한 결과를
+	//				호출한 쪽(주로 main함수)으로 보낼때
+	//				보낼 데이터의 자료형에 맞춰서
+	
+//	public static A B(C) {
+//		내용
+//		return
+//	}
+	
+	// 랜덤한 정수를 하나 구하는 함수
+	
+	// 두 정수를 넣어을 때 더한 값을 출력하는 함수
+	
+	public static int random1() {
+		Random r = new Random();
+		int randomm = r.nextInt(10)+1;
+		System.out.println(randomm);
+		return randomm;
+	}
+	
+	public static int random2() {
+		Random r = new Random();
+		int randommm = r.nextInt(10)+1;
+		System.out.println(randommm);
+		return randommm;
+	}
+	
+	
+	public static void main(String[] args) {
+		// 랜덤한 정수 2개 구해서
+		
+		// 그 2개의 수를 더한 값을 출력
+	}
+
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

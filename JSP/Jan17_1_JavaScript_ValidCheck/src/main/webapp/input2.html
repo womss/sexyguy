@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function checkValid () { //인풋 태그들에 접근할 수 있게 하는
+		let idInput = document.ff.idd; // document.form이름.input이름
+		let pwInput = document.ff.pwpw;
+		let pwchkInput = document.ff.pwchk;
+		let footInput = document.ff.foot;
+		
+		// 필수 검사
+		// ID : 값 누락 X / 5 ~ 10글자
+		// PW : 값 누락 X / 5 ~ 10글자
+		// PW랑 PWCHECK이 다르면 ?!?! (실수 방지용)
+		// PW에 3, 6, 9 중에 하나 이상 / h, k중에 하나 이상 들어갔으면
+		/*
+		let numExist = false;	// 숫자가 있는지 체크용
+		let num = "369";		// 이 중에 하나만 있어라!
+		for (let i = 0; i < num.length; i++){
+			if (pwInput.value.indexOf(num[i]) != -1) { // 들어있다면
+				numExist = true;
+				break;
+			}
+		}
+		let letterExist = false;	// 문자가 있는지 체크용
+		let letter = "hk";			// 이 중에 하나만 있어라!
+		for (let i = 0; i < letter.length; i++){
+			if (pwInput.value.indexOf(letter[i]) != -1) { // 들어있다면
+				letterExist = true;
+				break;
+			}
+		}
+		alert(numExist);
+		alert(letterExist); // 두 조건을 만족하게 되면 둘 다 true
+		//
+		if (!numExist || !letterExist){ // 폴스로 시작하면 폴스라 시작을 안하니까 (폴스가 아니면 || 트루가 아니면)으로 시작함" 둘 중에 하나라도 문제가 있는 경우
+			alert(numExist);
+			alert(letterExist);
+			alert("있어야 할게 없는데 ?")
+			return false;
+		}
+		*/
+		
+		// 발사이즈 (숫자만) =>isNaN() 함수 사용
+		
+		
+		if (!idInput.value) {// id인풋에 아무것도 입력하지 않았을 때
+			alert("님 ID 안씀 ㅋ");
+			idInput.focus();	// 서비스 차원으로 id인풋에 커서 갖다 놓기
+			return false;
+		} else if (idInput.value.length < 5) {
+			alert("ID는 5 ~ 10글자 !");
+			idInput.focus();	// 서비스 차원으로 id인풋에 커서 갖다 놓기
+			idInput.value = ""; // 뭔가를 입력하긴 했는데 5자리 미만일테니 서비스 차원으로 기존에 썼던거 지우기
+			return false;
+		}
+		
+		
+		
+		// 패스워드 입력문
+		else if (!pwInput.value) {
+			alert("님 비번 안씀 ㅋ");
+			pwInput.focus();	// 서비스 차원으로 id인풋에 커서 갖다 놓기
+			return false;
+		} else if (pwInput.value.length < 5) {
+			alert("비번은 5 ~ 10글자 !");
+			pwInput.value = ""; // 뭔가를 입력하긴 했는데 5자리 미만일테니 서비스 차원으로 기존에 썼던거 지우기
+			pwInput.focus();	// 서비스 차원으로 id인풋에 커서 갖다 놓기
+			return false;
+		} else if ((pwInput.value.indexOf("3"||"6"||"9") == -1) && (pwInput.value.indexOf("h"||"k") == -1)){
+			alert("3, 6, 9중에 하나는 들어가야 함 ㅋ");
+			pwInput.value = "";
+			pwInput.focus();
+			return false;
+		} 
+		
+		// 패스워드 확인 문
+		else if (pwchkInput.value!=pwInput.value) {
+			alert("님 PW 다름 ㅋ");
+			pwInput.value = "";
+			pwchkInput.value = "";
+			pwInput.focus();
+			return false;
+		} 
+		//발사이즈 입력문
+		else if (!footInput.value) {
+			alert("님 발 사이즈 입력 안함 ㅋ");
+			footInput.value= "";
+			footInput.focus();
+			return false;
+		}
+		else if (isNaN(footInput.value)) {	// else if (!footInput.value.isNaN) {
+			alert("사이즈는 숫자만 입력하셈 ㅋ");
+			footInput.value= "";
+			footInput.focus();
+			return false;
+		}
+	
+		return true;
+		
+	}
+	let s = "오늘은 금요일인데 너무 졸려요";
+	// alert(s);
+	// alert(s.length);			// 글자수
+	// alert(s[5]);				// 5번째 위치의 글자에 접근 가능 - 012345 - 6번째
+	// alert(s.indexOf("졸"))	// "졸"은 몇 번째 위치에 있을까
+	// alert(s.indexOf("악"));		// -1 ("악"이라는 값이 없어서 -1 리턴)
+	// alert(s.indexOf("매우") != -1);	// "매우"가 포함되어 있는가
+	//	indexOf : 있으면 그 위치를 리턴, 없으면 -1을 리턴
+	
+	// "return checkValid();" 와 "heckValid();"는 무슨차이인지
+</script>
+</head>
+<body>
+	<!--
+		ID / PW / PW확인 / 발사이즈 / 버튼
+	-->
+	<form action="ㅋㅋㅋ" name="ff" onsubmit="return checkValid();"> 
+		<input name="idd" placeholder="ID" maxlength="10" autofocus><P>
+		<input name="pwpw" placeholder="PW" maxlength="10"><P>
+		<input name="pwchk" placeholder="PW Check"><P>
+		<input name="foot" placeholder="shoe"><P>
+		<hr>
+		<button onclick="ID()" "PW();" "PWCheck();" "shoe();">Submit</button>
+	</form>
+
+</body>
+</html>

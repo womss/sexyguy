@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="org.springframework.context.support.AbstractApplicationContext"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="com.beaver.feb102.dog.Dog"/>
+<fullyQualifiedTypeName name="com.beaver.feb102.cat.Cat"/>
+<fullyQualifiedTypeName name="com.beaver.feb102.human.Human"/>
+<fullyQualifiedTypeName name="com.beaver.feb111.fruit.Fruit"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="com.beaver.feb111.member.MemberDAO"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Qualifier"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestParam"/>
+<fullyQualifiedTypeName name="com.beaver.feb112.calc.CalcResult"/>
+<fullyQualifiedTypeName name="org.springframework.validation.BindingResult"/>
+<fullyQualifiedTypeName name="com.beaver.feb112.calc.CalcDAO"/>
+<fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="java.lang.Double"/>
+<fullyQualifiedTypeName name="com.beaver.feb113.calc.CalcResult"/>
+<fullyQualifiedTypeName name="com.beaver.feb113.uc.UCResult"/>
+<fullyQualifiedTypeName name="com.beaver.http.client.BeaverHttpClient"/>
+<fullyQualifiedTypeName name="java.math.BigDecimal"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="com.beaver.feb122.student.StudentMapper"/>
+<fullyQualifiedTypeName name="com.beaver.feb122.student.Student"/>
+<fullyQualifiedTypeName name="com.beaver.feb122.test.test"/>
+<fullyQualifiedTypeName name="com.beaver.feb122.test.Test"/>
+<fullyQualifiedTypeName name="com.beaver.feb122.test.DateManager"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="com.beaver.feb122.test.TestMapper"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="com.beaver.feb122.student.StudentDAO"/>
+<fullyQualifiedTypeName name="com.beaver.feb122.test.TestDAO"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+</style>
+<script type="text/javascript" src="jQuery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		// alert('asdf');
+		// 셀렉값을 바꾸면
+		$("select").change(function() { // select값
+			let t = $(this).val();
+			// alert(t);
+			
+			if (t === "직접입력") {
+				$(this).removeAttr("name"); // 직접입력을 눌렀을때 속성값을 지워버림
+				let eAddr = $("<input>").attr("name", "eAddr");
+				$("div").append(eAddr);
+			} else {
+				$("div").empty();
+				$(this).attr("name", "eAddr"); // 따라서 직접입력을 눌렀다가 다시 셀렉을 눌렀을  때 속성값을 생성 //// 스프링 마이바티스 
+			}
+			
+		});
+	});
+</script>
+</head><!-- 이메일 입력 -->
+<body>
+	<select name="eAddr">
+		<option value="naver.com">naver.com</option>
+		<option value="gmail.com">gmail.com</option>
+		<option vlaue="kakao.com">kakao.com</option>
+		<option>직접입력</option>
+	</select>
+	<div></div>
+</body>
+</html>

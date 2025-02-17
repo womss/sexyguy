@@ -1,0 +1,33 @@
+package com.beaver.feb171.fruit;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.beaver.feb122.student.StudentMapper;
+
+@Service
+public class FruitDAO {
+
+	@Autowired
+	private SqlSession ss;
+	
+	public void getAllFruit(HttpServletRequest req) {
+		try {
+//			List<Student> student = ss.getMapper(StudentMapper.class).getAllStudent();
+//			req.setAttribute("student", student);
+			// 위에걸 한줄로 줄인다면
+			req.setAttribute("fruit", ss.getMapper(FuritMapper.class).getAllStudent());
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+	
+	
+}
