@@ -14,6 +14,7 @@ function App() {
       <div className="black-nav">
         <h4>블로그임</h4>
         <h4>블로그임ㅇㅇ</h4>
+        <h4>블로그임?</h4>
       </div>
       <div className='list'>
         <h4>{ 글제목 }</h4>
