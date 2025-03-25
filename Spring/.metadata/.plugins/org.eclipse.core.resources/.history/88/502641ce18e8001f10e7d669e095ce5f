@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	View (V) - <br>
+		JSP : .html or .jsp <br>
+		Spring Legacy : .jsp <br>
+		Spring Boot : .html <br>
+	<hr>
+	input 3개 => 이름, x, y <br>
+	button 하나 를 <br>
+	form에 담기
+<form action="" id="if">
+	<input id="n" autofocus autocomplete="off" placeholder="이름">
+	<input id="x" autocomplete="off" placeholder="x">
+	<input id="y" autocomplete="off" placeholder="y">
+	<button type="submit">확인</button>
+</form>
+	
+</body>
+</html>

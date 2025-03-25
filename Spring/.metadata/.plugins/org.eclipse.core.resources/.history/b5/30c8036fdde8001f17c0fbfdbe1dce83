@@ -1,0 +1,30 @@
+package com.beaver.feb113.uc;
+
+import java.util.HashMap;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class UCDAO {
+	private HashMap<String, String> unit; // 값을 넣었을때 오른쪽 스트링에 맞는 값을 가져오겠다?
+	
+	public void setUnit(HashMap<String, String> unit) {
+		this.unit = unit;
+	}
+
+	// 강사님
+	public void convert(UCResult ur, HttpServletRequest req) {
+		double n1 = ur.getN1();
+		String what = req.getParameter("select");
+		double n2 = n1 * 1.61;
+		if (what.equals("inch")) {
+			n2 = n1 * 0.39;
+		} else if (what.equals("pyeong")) {
+			n2 = n1 * 0.3;
+		} else if (what.equals("f")) {
+			n2 = n1 * 1.8 + 32;
+		}
+
+		// 단위들은 어떻게 받아올 것인가 ?
+
+	}
+}

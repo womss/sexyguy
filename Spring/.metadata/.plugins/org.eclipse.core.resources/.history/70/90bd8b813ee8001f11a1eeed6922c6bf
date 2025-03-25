@@ -1,0 +1,51 @@
+package com.beaver.feb112.calc;
+
+import javax.servlet.http.HttpServletRequest;
+
+public class CalcDAO {
+	private int allCalcCount; // 몇 번 계산했는지
+	
+	public void calculate(CalcResult cr, HttpServletRequest req) {
+		
+		
+		
+	}
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

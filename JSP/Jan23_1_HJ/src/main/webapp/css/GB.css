@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "wide";
+  src: url("wide.TTF");
+}
+
+body {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	
+}
+
+#GBETbl {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+img {
+	width: 250px;
+	height: 250px;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <link rel="stylesheet" href="test1.css">
+</head>
+
+<body>
+  <div class="container">
+    <form action="Output14" method="GET">
+      <h1>Sexyguy Management</h1>
+      <div class="form-group">
+		<hr>
+        <label for="id">ID</label>
+        <input id="id" name="id" type="text" placeholder="아이디를 입력하세요" maxlength="20" required>
+      </div>
+      <div class="form-group">
+        <label for="pw">비밀번호</label>
+        <input id="pw" name="pw" type="password" placeholder="비밀번호를 입력하세요" maxlength="20" required>
+      </div>
+      <div class="form-group">
+        <label for="email">이메일</label>
+        <div class="email-group">
+          <input id="email" name="email" type="text" placeholder="이메일" maxlength="20" required>
+          <span>@</span>
+          <select name="host">
+            <option value="naver.com">naver.com</option>
+            <option value="daum.net">daum.net</option>
+            <option value="gmail.com">gmail.com</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="phone">전화번호</label>
+        <input id="phone" name="phone" type="tel" placeholder="전화번호를 입력하세요" maxlength="11">
+      </div>
+      <div class="form-group">
+        <label for="gender">성별</label>
+        <select id="gender" name="gender">
+          <option value="선택">선택</option>
+          <option value="남자">남자</option>
+          <option value="여자">여자</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="location">지역</label>
+        <select id="location" name="location">
+          <option value="선택">선택</option>
+          <option value="서울">서울</option>
+          <option value="경기">경기</option>
+          <option value="시골">시골</option>
+          <option value="한국 밖">한국 밖</option>
+        </select>
+      </div>
+     <div class="form-group">
+  <label>취미</label>
+  <div class="hobbies">
+    <input type="checkbox" id="hobby1" name="hobby" value="독서">
+    <label for="hobby1">독서</label>
+    
+    <input type="checkbox" id="hobby2" name="hobby" value="게임">
+    <label for="hobby2">게임</label>
+    
+    <input type="checkbox" id="hobby3" name="hobby" value="등산">
+    <label for="hobby3">등산</label>
+    
+    <input type="checkbox" id="hobby4" name="hobby" value="컴퓨터">
+    <label for="hobby4">컴퓨터</label>
+    
+    <input type="checkbox" id="hobby5" name="hobby" value="영화관람">
+    <label for="hobby5">영화관람</label>
+    
+    <input type="checkbox" id="hobby6" name="hobby" value="여행">
+    <label for="hobby6">여행</label>
+  </div>
+</div>
+      </div>
+      <div class="form-actions">
+        <button type="submit">가입하기</button>
+        <button type="reset">초기화</button>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>

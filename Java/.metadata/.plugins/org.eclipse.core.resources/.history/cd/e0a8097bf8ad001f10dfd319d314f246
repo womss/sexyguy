@@ -1,0 +1,67 @@
+import java.util.Scanner;
+
+public class RMain2_1 {
+	public static void main(String[] args) {
+		// 누구 : 
+		//		매니저
+		//			시스템관리
+		//			학생관리
+		//			수업관련 업무
+		//		강사
+		//			학생관리
+		//			수업관련 업무
+		//		학생
+		//			수업관련 업무
+		//	를 반복하다가 "끝이라고 입력하면 프로그램 종료 if + break
+		
+		Scanner k = new Scanner(System.in);
+		String role = "";				// null 애매 / 상태를 표시하기위한 값
+		a : while (true) {		// while문 조건 안에 (true) 넣으면 무한반복 // 반복문에 이름 붙이기
+																	// 반복문앞에 [이름] [:]
+			System.out.println("누구 : ");
+			role = k.next();
+			switch (role) {
+			case "매니저":
+				System.out.println("시스템 관리");
+			case "강사":
+				System.out.println("학생 관리");
+			case "학생":
+				System.out.println("수업관련 업무");
+				break; // 무조건 가까운거 (=switch)를 종료하겠다
+				// break a; // break 뒤에 반복문의 이름을 넣으면
+						//반복문이 종료
+			case "끝":
+				System.out.println("종료합니다.");
+				break a;
+			default:
+				System.out.println("다시입력");
+				break;
+			}
+			
+			
+			
+			
+		}
+		System.out.println("---------------------------------");
+		bb : for (int i = 1; i <= 3; i++) {							// i가 1번 실행될 동안
+			aa : for (int j = 1; j <= 3; j++) {						// j는 3번 j가 1번 실행될 동안
+				for (int j2 = 1; j2 <= 3; j2++) {					// j2는 1번 2 6 18
+					System.out.printf("%d %d %d\n", i, j, j2);
+					if (i == 2) {
+						System.out.println("중단 !");
+									
+						// break;			// ?				123
+						// break aa;		// ?				123123
+						// break bb;		// ?				123123123123123123
+						
+					
+					}
+					
+				}
+			}
+		}
+		
+		
+		
+	}
+}

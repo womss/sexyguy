@@ -1,0 +1,30 @@
+package com.beaver.feb171.fruit;
+
+import org.apache.ibatis.session.SqlSession;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class FruitDAO {
+
+	@Autowired
+	private SqlSession ss;
+	
+	public void getFruit() {
+		
+		try {
+			FruitMapper fm = ss.getMapper(FruitMapper, class)
+			
+			
+			
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,61 @@
+package com.beaver.feb113.calc;
+
+import javax.servlet.http.HttpServletRequest;
+
+import com.beaver.feb113.calc.CalcResult;
+
+public class CalcDAO {
+	
+	public String void calcTrans() {
+		public void calculate(CalcResult cr, HttpServletRequest req) {
+			
+			
+			double inch = (double) (cr.getInch() * cr.getOn()); // cr이 뭐지
+			double pyeong = (double) (cr.getPyeong() * cr.getOn());
+			double f = (double) (Double.parseDouble(cr.getF()) * cr.getOn());
+			double km = (double) (cr.getKm() * cr.getOn());
+			req.getAttribute()
+			
+			
+		}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+}
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

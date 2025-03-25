@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.beaver.feb122.test.TestMapper"><!-- 스튜던트매퍼.xml과 스튜던트.java는 반드시 한쌍으로 다녀야한다 -->
+	<!-- 입력받은걸 자바의 DAO로 다시 서블릿xml로 -->
+	<insert id="regTest" parameterType="com.beaver.feb122.test.Test"> <!-- 식별자 부여, 값 채우기 = "자료형" -->
+		insert into feb12_test values(#{s_subject}, TO_DATE(#{testDay}, 'YYYYMMDD')) <!-- ; 세미콜론 넣으면 안됨 넣으면 문법 오류 -->
+<!-- 		insert into feb12_test values(#{s_subject}, TO_DATE(#{s_y}#{s_m}#{s_d}, 'YYYYMMDD')) ; 세미콜론 넣으면 안됨 넣으면 문법 오류 -->
+	</insert>
+	<select id="getAllTest" resultType="com.beaver.feb122.test.Test">
+		select * from feb12_test order by s_date
+	</select>
+</mapper>

@@ -1,0 +1,24 @@
+package com.beaver.feb122.test;
+
+import java.util.List;
+
+
+//studentMapper.xml과 한쌍임
+
+
+public interface TestMapper {// DAO쪽으로 넘기기위한
+	// method 리턴타입 
+	//	insert / update / delete
+	//		=> 영향을 받은 데이터 수 - int(리턴타입)
+	// select
+	//		결과가 하나 나온다 : resultType객체 (Student)
+	//		결과가 여러개 나온다 : List<resultType객체> (List<Student>)
+	
+	// 추상메소드 작성
+	// 메소드명 - mapper.xml의 id와 맞추기!
+	// 파라미터 - mapper.xml의 parameterType과 맞추기!
+	// 영향을 받은 개수가 몇개인가 12번줄
+	public abstract int regTest(Test t); // 'testMapper.xml'의 <insert 'id=""' 의 값과 일치되어야 함 그리고 xml에 'id값에 노란 밑줄'이 뜨면 지우고 다시 써서 '노란밑줄 없애기'
+	public abstract List<Test> getAllTest(); // xml의 <select 'id=""'값과
+	
+}

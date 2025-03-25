@@ -1,0 +1,8 @@
+package com.beaver.feb122.subject;
+
+import java.util.Date;
+
+public class Subject {
+	private String s_su;
+	private Date s_date;
+}

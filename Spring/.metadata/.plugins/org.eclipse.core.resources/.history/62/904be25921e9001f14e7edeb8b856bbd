@@ -1,0 +1,83 @@
+package com.beaver.feb122.test;
+
+
+	import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.List;
+
+	import javax.servlet.http.HttpServletRequest;
+
+	import org.apache.ibatis.session.SqlSession;
+	import org.springframework.beans.factory.annotation.Autowired;
+	import org.springframework.stereotype.Service;
+
+	@Service
+	public class TestDAO {
+		
+		@Autowired
+		private SqlSession ss;
+		
+		public void regTest(Test t, HttpServletRequest req) { // 학생 객체와 요청파라미터
+			try {
+				
+				TestMapper sm = ss.getMapper(TestMapper.class);
+				
+				if (sm.regTest(t) == 1) {// 추상메소드를 호출했을 때에 영향을 받은 데이터의 수가 하나라면
+					req.setAttribute("rr", "시험 등록 성공");
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+				req.setAttribute("rr", "시험 등록 실패");
+			}
+		}
+		
+		// DB작업 끝
+		public void getAllTest(HttpServletRequest req) {
+			try {
+				req.setAttribute("tests", ss.getMapper(TestMapper.class).getAllTest());
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		// 날짜 변환
+		public void setDate(HttpServletRequest req) {
+			
+			try {
+				TestMapper sm = ss.getMapper(TestMapper.class);
+
+				int y = Integer.parseInt(req.getParameter("s_y"));
+				int m = Integer.parseInt(req.getParameter("s_m"));
+				int d = Integer.parseInt(req.getParameter("s_d"));
+				String testDay = String.format("%s%02d%02d", y, m, d);
+				
+				if (testDay != null) {
+					req.setAttribute("rrr", "날짜 등록 성공");
+					req.setAttribute("testDay", testDay);
+					
+				}
+			} catch (Exception e) {
+				e.printStackTrace();
+				req.setAttribute("rrr", "날짜 등록 실패");
+			}
+			
+			
+			
+			
+		}
+			
+			
+		// 년도
+//		public void getCurYear(Test t,HttpServletRequest req) {
+//			Date now = new Date();		// 오늘 날짜 불러오고
+//			SimpleDateFormat sdf = new SimpleDateFormat("yyyy");	// yyyy형식을 sdf에 담겠다
+//			String curYear = sdf.format(now);						// 오늘 날짜중 년도에 해당하는 부분을 문자열 curYear에 담겠다
+//			int currentYear = Integer.parseInt((String) curYear);	// 문자열 오늘 년도를 숫자로 바꿔 정수형 currentYear에 담겠다
+//			StringBuilder yearsBuilder = new StringBuilder();		// 문자열을 담는 yearsBuilder를 생성
+//			for (int i = currentYear; i >= currentYear - 100; i--) { // 현재 년도부터 현재 년도의 100년전까지의 년마다
+//				yearsBuilder.append("<option value=" + i + ">" + i + "</option>");
+//			}
+//			req.setAttribute("s_y", yearsBuilder.toString());
+//		}
+
+	}
+

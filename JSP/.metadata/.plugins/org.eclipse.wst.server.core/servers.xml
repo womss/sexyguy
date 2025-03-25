@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v9.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v9.0 Server at localhost" name="Tomcat v9.0 Server at localhost" runtime-id="Apache Tomcat v9.0" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="82">
+    <list key="modules" value0="Jan24_3_CustomTag::org.eclipse.jst.jee.server:Jan24_3_CustomTag::jst.web::4.0" value1="Feb03_1_JSP_DB::org.eclipse.jst.jee.server:Feb03_1_JSP_DB::jst.web::4.0" value2="Feb05_1_JSP::org.eclipse.jst.jee.server:Feb05_1_JSP::jst.web::4.0" value3="Feb06_1_LoginSystem::org.eclipse.jst.jee.server:Feb06_1_LoginSystem::jst.web::4.0" value4="Feb06_2_SNSS::org.eclipse.jst.jee.server:Feb06_2_SNSS::jst.web::4.0" value5="Feb06_2_SNS::org.eclipse.jst.jee.server:Feb06_2_SNS::jst.web::4.0"/>
+  </server>
+</servers>

@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item key="org.eclipse.jdt.ui.last.selected.jre.kind2" value="2"/>
+	<item key="org.eclipse.jdt.ui.last.selected.execution.enviroment" value="JavaSE-1.8"/>
+	<item key="org.eclipse.jdt.ui.lastextjar" value="C:\Users\sdedu\Desktop\Hi\Beaver"/>
+	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
+		<item key="group_libraries" value="true"/>
+		<item key="layout" value="2"/>
+		<item key="rootMode" value="1"/>
+		<item key="linkWithEditor" value="false"/>
+		<item key="memento" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;packageExplorer group_libraries=&quot;1&quot; layout=&quot;2&quot; linkWithEditor=&quot;0&quot; rootMode=&quot;1&quot; workingSetName=&quot;Aggregate for window 1731984124162&quot;&gt;&#x0D;&#x0A;&lt;customFilters userDefinedPatternsEnabled=&quot;false&quot;&gt;&#x0D;&#x0A;&lt;xmlDefinedFilters&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.StaticsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.buildship.ui.packageexplorer.filter.gradle.buildfolder&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.mylyn.java.ui.MembersFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.m2e.MavenModuleFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.buildship.ui.packageexplorer.filter.gradle.subProject&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.pde.ui.BinaryProjectFilter1&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.pde.ui.ExternalPluginLibrariesFilter1&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.FieldsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.DeprecatedMembersFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter&quot; isEnabled=&quot;true&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.LibraryFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;child filterId=&quot;org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter&quot; isEnabled=&quot;false&quot;/&gt;&#x0D;&#x0A;&lt;/xmlDefinedFilters&gt;&#x0D;&#x0A;&lt;/customFilters&gt;&#x0D;&#x0A;&lt;/packageExplorer&gt;"/>
+	</section>
+	<section name="JavaElementSearchActions">
+	</section>
+	<section name="OptionalMessageDialog.hide.">
+		<item key="org.eclipse.jdt.ui.typecomment.deprecated" value="true"/>
+	</section>
+	<section name="NewClassWizardPage">
+		<item key="create_constructor" value="false"/>
+		<item key="create_unimplemented" value="true"/>
+	</section>
+	<section name="completion_proposal_size">
+		<item key="contextSelector.size.x" value="331"/>
+		<item key="contextSelector.size.y" value="221"/>
+	</section>
+	<section name="quick_assist_proposal_size">
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.typehierarchy.QuickHierarchy">
+		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_WIDTH" value="450"/>
+		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_HEIGHT" value="380"/>
+		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_SIZE" value="true"/>
+		<item key="org.eclipse.jdt.internal.ui.typehierarchy.HierarchyInformationControlDIALOG_USE_PERSISTED_LOCATION" value="false"/>
+	</section>
+	<section name="FatJarPackageWizard">
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_SAVE" value="false"/>
+		<item key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION" value="C:\Users\sdedu\Desktop\Java"/>
+		<item key="FatJarPackageWizardPage.LIBRARY_HANDLING" value="1"/>
+		<item key="FatJarPackageWizardPage.LAUNCH_CONFIGURATION_SELECTION_NAME" value="AMain2 - Nov29_2_Array"/>
+		<item key="FatJarPackageWizardPage.DESTINATION_PATH_SELECTION" value="C:\Users\sdedu\Desktop\Java\zxcv.jar"/>
+		<list key="FatJarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\sdedu\Desktop\Java\zxcv.jar"/>
+			<item value="C:\Users\sdedu\Desktop\Java\close.jar"/>
+			<item value="C:\Users\sdedu\Desktop\Java\why.jar"/>
+			<item value="C:\Users\sdedu\Desktop\Java\so.jar"/>
+			<item value="C:\Users\sdedu\Desktop\Java\소감.jar"/>
+			<item value="C:\Users\sdedu\Desktop\Java\소감.bat"/>
+			<item value="C:\Users\sdedu\Desktop\Java\name.jar"/>
+		</list>
+		<list key="FatJarPackageWizardPage.ANTSCRIPT_LOCATION_HISTORY">
+			<item value="C:\Users\sdedu\Desktop\Java.xml"/>
+			<item value=".xml"/>
+		</list>
+	</section>
+	<section name="RefactoringWizard.preview">
+		<item key="width" value="600"/>
+		<item key="height" value="400"/>
+	</section>
+	<section name="RenameInformationPopup">
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.text.QuickOutline">
+		<item key="GoIntoTopLevelTypeAction.isChecked" value="false"/>
+		<item key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_WIDTH" value="450"/>
+		<item key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_HEIGHT" value="380"/>
+		<item key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_USE_PERSISTED_SIZE" value="true"/>
+		<item key="org.eclipse.jdt.internal.ui.text.JavaOutlineInformationControlDIALOG_USE_PERSISTED_LOCATION" value="false"/>
+	</section>
+	<section name="org.eclipse.jdt.internal.ui.dialogs.OpenTypeSelectionDialog2">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History/&gt;"/>
+		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="545"/>
+			<item key="DIALOG_Y_ORIGIN" value="190"/>
+			<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+		</section>
+	</section>
+	<section name="org.eclipse.ltk.ui.refactoring.settings">
+		<item key="updateSimilarElements" value="false"/>
+		<item key="updateSimilarElementsMatchStrategy" value="1"/>
+		<item key="updateTextualMatches" value="false"/>
+		<item key="updateQualifiedNames" value="false"/>
+		<item key="patterns" value="*"/>
+	</section>
+	<section name="JavadocWizardDialog">
+		<item key="DIALOG_X_ORIGIN" value="537"/>
+		<item key="DIALOG_Y_ORIGIN" value="145"/>
+		<item key="DIALOG_WIDTH" value="616"/>
+		<item key="DIALOG_HEIGHT" value="567"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="javadoc">
+		<item key="javadoc_command_history" value="C:\Program Files\ojdkbuild\java-1.8.0-openjdk-1.8.0.332-1\bin\javadoc.exe"/>
+		<item key="fromStandard" value="true"/>
+		<item key="docletname" value=""/>
+		<item key="docletpath" value=""/>
+		<item key="access" value="public"/>
+		<item key="use" value="true"/>
+		<item key="author" value="true"/>
+		<item key="version" value="true"/>
+		<item key="nodeprecated" value="false"/>
+		<item key="nodeprecatedlist" value="false"/>
+		<item key="splitindex" value="true"/>
+		<item key="noindex" value="false"/>
+		<item key="notree" value="false"/>
+		<item key="nonavbar" value="false"/>
+		<item key="openinbrowser" value="false"/>
+		<item key="source" value="1.8"/>
+		<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Dec11_1_OOP_Static\javadoc.xml"/>
+		<item key="destdir" value="C:\Users\sdedu\Desktop\close"/>
+		<item key="vmparam" value="-locale ko_KR -encoding UTF-8 -charset UTF-8 -docencoding UTF-8"/>
+		<section name="projects">
+			<section name="Nov29_2_Array">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov29_2_Array\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov29_2_Array\javadoc.xml"/>
+			</section>
+			<section name="Dec06_2_OOP">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Dec06_2_OOP\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Dec06_2_OOP\javadoc.xml"/>
+			</section>
+			<section name="Nov26_2_ConditionalStmt">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov26_2_ConditionalStmt\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov26_2_ConditionalStmt\javadoc.xml"/>
+			</section>
+			<section name="Nov25_1_Function">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov25_1_Function\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov25_1_Function\javadoc.xml"/>
+			</section>
+			<section name="Nov28_1_RepeatStmt">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov28_1_RepeatStmt\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov28_1_RepeatStmt\javadoc.xml"/>
+			</section>
+			<section name="Nov29_1_RepeatStmt">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov29_1_RepeatStmt\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov29_1_RepeatStmt\javadoc.xml"/>
+			</section>
+			<section name="Nov20_1_Variable">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov20_1_Variable\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov20_1_Variable\javadoc.xml"/>
+			</section>
+			<section name="Dec03_1_PP_End">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Dec03_1_PP_End\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Dec03_1_PP_End\javadoc.xml"/>
+			</section>
+			<section name="Nov21_1_KeyboardInput">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov21_1_KeyboardInput\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov21_1_KeyboardInput\javadoc.xml"/>
+			</section>
+			<section name="Nov29_3_pp_End">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov29_3_pp_End\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov29_3_pp_End\javadoc.xml"/>
+			</section>
+			<section name="Nov21_2_Operator">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov21_2_Operator\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov21_2_Operator\javadoc.xml"/>
+			</section>
+			<section name="Dec10_3_OOP">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Dec10_3_OOP\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Dec10_3_OOP\javadoc.xml"/>
+			</section>
+			<section name="Dec04_1_PP_End">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Dec04_1_PP_End\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Dec04_1_PP_End\javadoc.xml"/>
+			</section>
+			<section name="Nov26_1_Function">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov26_1_Function\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov26_1_Function\javadoc.xml"/>
+			</section>
+			<section name="Nov27_2_RepeatStmt">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov27_2_RepeatStmt\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov27_2_RepeatStmt\javadoc.xml"/>
+			</section>
+			<section name="Nov20_2_KeyboardInput">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov20_2_KeyboardInput\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov20_2_KeyboardInput\javadoc.xml"/>
+			</section>
+			<section name="Dec10_2_OOP">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Dec10_2_OOP\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Dec10_2_OOP\javadoc.xml"/>
+			</section>
+			<section name="Dec10_1_OOP">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Dec10_1_OOP\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Dec10_1_OOP\javadoc.xml"/>
+			</section>
+			<section name="Nov19_1_Start">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov19_1_Start\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov19_1_Start\javadoc.xml"/>
+			</section>
+			<section name="Nov27_1_ConditionStmt">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov27_1_ConditionStmt\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov27_1_ConditionStmt\javadoc.xml"/>
+			</section>
+			<section name="Dec06_1_OOP">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Dec06_1_OOP\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Dec06_1_OOP\javadoc.xml"/>
+			</section>
+			<section name="Dec11_1_OOP_Static">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\close"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Dec11_1_OOP_Static\javadoc.xml"/>
+			</section>
+			<section name="Nov22_2_Function">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov22_2_Function\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov22_2_Function\javadoc.xml"/>
+			</section>
+			<section name="Nov19_2_Print">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov19_2_Print\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov19_2_Print\javadoc.xml"/>
+			</section>
+			<section name="Dec05_1_PP_End">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Dec05_1_PP_End\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Dec05_1_PP_End\javadoc.xml"/>
+			</section>
+			<section name="Nov22_1_Operator">
+				<item key="href" value=""/>
+				<item key="destdir" value="C:\Users\sdedu\Desktop\Java\Nov22_1_Operator\doc"/>
+				<item key="antpath" value="C:\Users\sdedu\Desktop\Java\Nov22_1_Operator\javadoc.xml"/>
+			</section>
+		</section>
+	</section>
+	<section name="SourceActionDialog.constructors">
+		<item key="VisibilityModifier" value="1"/>
+		<item key="FinalModifier" value="false"/>
+		<item key="SynchronizedModifier" value="false"/>
+		<item key="Comments" value="false"/>
+	</section>
+	<section name="GenerateConstructorUsingFieldsSelectionDialog">
+		<item key="OmitCallToSuper" value="false"/>
+	</section>
+	<section name="DialogBounds_GenerateConstructorUsingFieldsSelectionDialog">
+		<item key="DIALOG_X_ORIGIN" value="312"/>
+		<item key="DIALOG_Y_ORIGIN" value="71"/>
+		<item key="DIALOG_WIDTH" value="531"/>
+		<item key="DIALOG_HEIGHT" value="678"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="NewPackageWizardPage">
+		<item key="create_package_info_java" value="false"/>
+	</section>
+	<section name="SourceActionDialog.methods">
+		<item key="VisibilityModifier" value="1"/>
+		<item key="FinalModifier" value="false"/>
+		<item key="SynchronizedModifier" value="false"/>
+		<item key="Comments" value="false"/>
+	</section>
+	<section name="AddGetterSetterDialog">
+		<item key="SortOrdering" value="false"/>
+		<item key="RemoveFinal" value="false"/>
+	</section>
+	<section name="DialogBounds_GetterSetterTreeSelectionDialog">
+		<item key="DIALOG_X_ORIGIN" value="698"/>
+		<item key="DIALOG_Y_ORIGIN" value="64"/>
+		<item key="DIALOG_WIDTH" value="540"/>
+		<item key="DIALOG_HEIGHT" value="696"/>
+		<item key="DIALOG_FONT_NAME" value="1|맑은 고딕|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|맑은 고딕"/>
+	</section>
+	<section name="BuildPathsPropertyPage">
+		<item key="pageIndex" value="2"/>
+	</section>
+	<section name="JarPackageWizard">
+		<item key="JarPackageWizardPage.EXPORT_CLASS_FILES" value="true"/>
+		<item key="JarPackageWizardPage.EXPORT_OUTPUT_FOLDER" value="false"/>
+		<item key="JarPackageWizardPage.EXPORT_JAVA_FILES" value="false"/>
+		<item key="JarPackageWizardPage.REFACTORINGS" value="false"/>
+		<item key="JarPackageWizardPage.COMPRESS" value="true"/>
+		<item key="JarPackageWizardPage.INCLUDE_DIRECTORY_ENTRIES" value="false"/>
+		<item key="JarPackageWizardPage.OVERWRITE" value="false"/>
+		<item key="jarOptionsWizardPage.EXPORT_WARNINGS" value="true"/>
+		<item key="jarOptionsWizardPage.EXPORT_ERRORS" value="true"/>
+		<item key="jarOptionsWizardPage.STORE_USE_SRC_FOLDERS" value="false"/>
+		<item key="jarOptionsWizardPage.BUILD_IF_NEEDED" value="true"/>
+		<item key="jarOptionsWizardPage.SAVE_DESCRIPTION" value="false"/>
+		<item key="jarOptionsWizardPage.DESCRIPTION_LOCATION" value=""/>
+		<item key="JarManifestWizardPage.GENERATE_MANIFEST" value="true"/>
+		<item key="JarManifestWizardPage.SAVE_MANIFEST" value="false"/>
+		<item key="JarManifestWizardPage.REUSE_MANIFEST" value="false"/>
+		<item key="JarManifestWizardPage.MANIFEST_LOCATION" value=""/>
+		<item key="JarManifestWizardPage.SEAL_JAR" value="false"/>
+		<list key="JarPackageWizardPage.DESTINATION_NAMES_ID">
+			<item value="C:\Users\sdedu\Desktop\Hi\BeaverHttpClient_v1.5.jar"/>
+			<item value="C:\Users\sdedu\Desktop\Hi\BeaverHttpClient_v1.0.jar"/>
+		</list>
+	</section>
+</section>

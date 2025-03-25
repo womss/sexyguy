@@ -1,0 +1,13 @@
+1739255238662	Delete element
+1739258549098	Rename type 'Conversion'
+1739258577608	Delete element
+1739258598895	Rename package 'com.beaver.feb113.conversion'
+1739258641788	Copy compilation unit
+1739258649908	Delete element
+1739261593462	Delete element
+1739261906934	Delete element
+1739263487791	Move 'js' to 'WEB-INF'
+1739263491888	Move 'js' to 'webapp'
+1739263493916	Move 'css' to 'WEB-INF'
+1739263499793	Move 'css' to 'resources'
+1739263592445	Move 'js' to 'resources'

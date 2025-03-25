@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
+	<style>
+		@font-face {
+			font-family: "wide";
+			src: url("wide.TTF");
+		}
+
+		body {
+			background: linear-gradient(to bottom, #8D77AB, #8D77AB);
+		}
+
+		#sell {
+			border: 3px solid #ddd;
+			border-radius: 10px;
+			font-size: 24px;
+			text-align: center;
+			background-color: #BAD8B6;
+			width: 1000px;
+			height: 200px;
+		}
+
+		#bottom {
+			margin-top: 30px;
+
+		}
+
+		#buy {
+			border: 3px solid #BAD8B6;
+			border-radius: 10px;
+			margin-top: 200px;
+			text-align: center;
+			background-color: rgb(225, 234, 205);
+			width: 200px;
+			height: 100px;
+		}
+
+		#rest {
+			border: 3px solid #ddd;
+			border-radius: 10px;
+			margin-top: 0px;
+			text-align: center;
+			background-color: rgb(249, 246, 230);
+			width: 200px;
+			height: 100px;
+		}
+
+		label {
+			cursor: pointer;
+			padding: 1rem;
+			color: rgb(36, 255, 102);
+			filter: drop-shadow(0 0 2px rgba(36, 255, 102, 0.7)) drop-shadow(0 0 5px rgba(36, 255, 102, 0.7)) drop-shadow(0 0 15px rgba(36, 255, 102, 0.7));
+		}
+
+		label:hover {
+			color: darkblue;
+			
+		}
+	</style>
+	<script type="text/javascript">
+		//	function kkkk() {
+		//		alert('ㅋㅋㅋㅋㅋ');
+		//	}
+
+		// 1. 버튼 3개 추가해서 각각 '100원', '500원', '1000원' 택스트 넣기
+		// 2. 각 버튼에 기능 넣기
+		// 3.
+		//		500원 미만이면 '선택할 수 있는 음료수 없음!'
+		//		500원 이상이면 ' 콜라 선택 가능'
+		//		700원 이상이면 ' 콜라, 사이다 선택 가능'
+		//		1000원 이상이면 ' 콜라, 사이다, 닥터페퍼 선택 가능'
+		//		2000원 이상이면 ' 콜라, 사이다, 닥터페퍼, 맥주 선택 가능'
+		//		3000원 이상이면 ' 콜라, 사이다, 닥터페퍼, 맥주, 소주 선택 가능'
+		//		=> alert으로 출력!
+		// 버튼을 클릭하면 돈이 추가
+		let coin = 0;
+
+let coke = 0;
+let cidar = 0;
+let pepper = 0;
+let beer = 0;
+let soju = 0;
+	
+	
+	     function insert1(add) {
+		coin += add;
+		console.log(`투입금액 : ${coin}원`);
+		choiceDrink();
+	     }
+
+
+		function choiceDrink() {
+			if (coin >= 3000) {
+				alert('콜라, 사이다, 닥터페퍼, 맥주, 소주 선택 가능');
+			} else if (coin >= 2000) {
+				alert('콜라, 사이다, 닥터페퍼, 맥주 선택 가능');
+			} else if (coin >= 1000) {
+				alert('콜라, 사이다, 닥터페퍼 선택 가능');
+			} else if (coin >= 700) {
+				alert('콜라, 사이다 선택 가능');
+			} else if (coin >= 500) {
+				alert('콜라 선택 가능');
+			} else {
+				alert('선택할 수 있는 음료수 없음 !')
+			}
+		}
+		
+		function buy(drink) {
+			switch (drink){
+				case "콜라":
+				if (coin < 500) {
+					alert('돈이 부족합니다.');
+					break;
+				}
+				alert(`${drink }를 선택했습니다. \r\n`
+				+ `${coin }에서 500원을 차감합니다.`);
+				coin -= 500;
+				coke++;
+				console.log(`현재 금액 : ${coin }원`);
+				break;
+			
+				case "사이다": 
+				if (coin < 700) {
+					alert('돈이 부족합니다.');
+					break;
+				}
+				alert(`${drink }를 선택했습니다. \r\n`
+				+ `${coin }에서 700원을 차감합니다.`);
+				coin -= 700;
+				cidar++;
+				console.log(`현재 금액 : ${coin }원`);
+				break;
+			
+				case "닥터페퍼":
+				if (coin < 1000) {
+					alert('돈이 부족합니다.');
+					break;
+				}
+				alert(`${drink }를 선택했습니다. \r\n`
+				+ `${coin }에서 1000원을 차감합니다.`);
+				coin -= 1000;
+				pepper++;
+				console.log(`현재 금액 : ${coin }원`);
+				break;
+			
+				case "맥주":
+				if (coin < 2000) {
+					alert('돈이 부족합니다.');
+					break;
+				}
+				alert(`${drink }를 선택했습니다. \r\n`
+				+ `${coin }에서 2000원을 차감합니다.`);
+				coin -= 2000;
+				beer++;
+				console.log(`현재 금액 : ${coin }원`);
+				break;
+			
+				case "소주":
+				if (coin < 3000) {
+					alert('돈이 부족합니다.');
+					break;
+				}
+				alert(`${drink }를 선택했습니다. \r\n`
+				+ `${coin }에서 3000원을 차감합니다.`);
+				coin -= 3000;
+				soju++;
+				console.log(`현재 금액 : ${coin }원`);
+				break;
+			
+		}
+		}
+	function insert(currency) {
+		coin += currency;
+		console.log(`현재 금액 : ${coin }원`);
+		choiceDrink();
+	}
+
+	function refundcoin() {
+		if (coin <= 0) {
+			alert('반환할 돈이 없는데요 ?');
+			return;
+		}
+		let refund = confirm(`${coin }원을 반환하시겠습니까 ?`);
+		if (refund) {
+			console.log(`${coin }원이 반환됩니다.`);
+			coin = 0;
+			console.log(`현재 금액 : ${coin }원`);
+		}
+	}
+
+	function showPurchase() {
+		alert(
+			`콜라 : ${coke }개\r\n`
+			+ `사이다 : ${cidar }개\r\n`
+			+ `닥터페퍼 : ${pepper }개\r\n`
+			+ `맥주 : ${beer }개\r\n`
+			+ `소주 : ${soju }개`
+		);
+	}
+
+
+
+
+	</script>
+</head>
+
+<body>
+	
+	<table id="sell" align="center">
+		<tr>
+			<td>
+				콜라
+			</td>
+			<td>
+				사이다
+			</td>
+			<td>
+				닥터페퍼
+			</td>
+			<td>
+				맥주
+			</td>
+			<td>
+				소주
+			</td>
+		</tr>
+		<tr>
+			<td>
+				500원
+			</td>
+			<td>
+				700원
+			</td>
+			<td>
+				1000원
+			</td>
+			<td>
+				2000원
+			</td>
+			<td>
+				3000원
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label onclick="buy('콜라');">구매</label>
+			</td>
+			<td>
+				<label onclick="buy('사이다');">구매</label>
+			</td>
+			<td>
+				<label onclick="buy('닥터페퍼');">구매</label>
+			</td>
+			<td>
+				<label onclick="buy('맥주');">구매</label>
+			</td>
+			<td>
+				<label onclick="buy('소주');">구매</label>
+			</td>
+		</tr>
+	</table>
+	<table id="bottom" align="center">
+		<tr>
+			<td id="buy">
+				<label onclick="insert1(100);">100원</label>
+			</td>
+			<td id="buy">
+				<label onclick="insert1(500);">500원</label>
+			</td>
+			<td id="buy">
+				<label onclick="insert1(1000)">1000원</label>
+			</td>
+		</tr>
+		<tr>
+			<td id="rest" colspan="3">
+				<label onclick="잔돈반환();">잔돈 반환</label>
+			</td>
+		</tr>
+		<tr>
+			<td id="rest" colspan="3">
+				<label onclick="showPurchase();">구매 내역</label>
+			</td>
+		</tr>
+	</table>
+
+
+</body>
+
+</html>

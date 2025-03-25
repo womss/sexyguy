@@ -1,0 +1,74 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class FMain5 {
+
+	// 동전 맞추기 게임
+	// 10개
+	
+	// 동전 10개 섞기
+	public static int shakeCoin() {
+		Random r= new Random();
+		int coin = r.nextInt(10)+1;
+		return coin;
+		
+	}
+	
+	public static int askUserAns() {
+		Scanner k = new Scanner(System.in);
+		System.out.print("몇 개? : ");
+		int userAns = k.nextInt();
+		return userAns;
+	}
+	
+	//답 맞춰보기
+	private void name() {
+		
+	}
+
+	
+	// 개수 몇개인지 입력
+	// 컴퓨터 몇개인지 발표
+	// 사용자랑답이랑 컴퓨터 답이랑 맞는지 비교
+	// 결과 출력
+	
+	
+	// 내가
+//	public static int userAn() {		// 유저의 개수 예측
+//		Scanner k = new Scanner(System.in);
+//		System.out.print("동전 갯수는? (1~10개 사이) : ");
+//		int useran = k.next();
+//		return useran;
+//		
+//	}
+//	
+//	
+//	public static int aiAn() {			// ai의 동전개수 발표
+//		Random r = new Random();
+//		int aicoin = r.nextInt(10)+1;
+//		return aicoin;
+//		
+//	}
+//	
+//	public static String userAiAn(int ucoin, int aicoin) {		// 유저와 ai의 답이 맞는지
+//		String userAiAn = (ucoin.equals(aicoin)) ? "정답" : "실패";
+//		return userAiAn;
+//	}
+//	
+//	public static void printResult(int ucoin, int aicoin, String result) {
+//		System.err.println("===================");
+//		System.out.printf("사용자 배팅 개수 : %s\n", ucoin);
+//		System.out.printf("ai 짤짤이 결과 : %d\n", aicoin);
+//		System.out.printf("배팅 결과 : %s\n", result);
+//	}
+//	
+//	
+//	public static void main(String[] args) {
+//		int ucoin = userAn();
+//		int aicoin = aiAn();
+//		String result = userAiAn(ucoin, aicoin);
+//		printResult(ucoin,aicoin,result);
+	}
+	
+	
+}

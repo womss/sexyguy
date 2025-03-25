@@ -1,0 +1,65 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="resources/jQuery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		// alert('sdf');
+		
+		// AJAX (Asynchronous JavaScript And XML)
+		//	: 자바스크립트를 통해서 서버에 데이터를 요청하는 것
+		/* $("#btn").click(function() {
+			// alert('asdf');
+			
+			// AJAX 진행
+			$.ajax({
+				url: "fruit.getXML", // url속성에 value(Controller에서 설정한 요청주소)
+				success: function(asd) { // 요청 성공하면 function 동작
+					// alert(asdf); // XML문서라는 것이 확인
+					
+					// DOM객체 하나 불러올때마다 나오는 콜백함수
+					$(asd).find("fruit").each(function(i, f) {
+						alert(i + ")" + f); // index(0번부터)
+											// fruit 한덩어리 f
+						let f_name = $(f).find("f_name").text();
+						let f_price = $(f).find("f_price").text();
+						alert(f_name + "]" + f_price);
+					
+					
+					});
+					
+				}
+				
+			});
+			
+		}); */
+		
+		// fruit.getXML에 요청해서
+		// 나오는 모든 데이터들을 가지고
+		// <table> 을 구성해주세요!
+		$("#btn").click(function() {
+			$.ajax({
+				url: "fruit.getXML",
+				success: function(asd){
+					$(asd).find("fruit").each(function(i, f){
+						let f_name = $(f).find("f_name").text();
+						let f_price = $(f).find("f_price").text();
+						let table = .text("<table>");
+						alert('table');
+						
+					});
+					
+				}
+		});
+		
+	});
+</script>
+</head>
+<body>
+	<button id="btn">버튼</button>
+</body>
+</html>

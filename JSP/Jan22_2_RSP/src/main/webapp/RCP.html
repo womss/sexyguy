@@ -1,0 +1,44 @@
+<!--가위를 누르면 컨트롤러로 가고-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1 name="h1">대 가위바위보 대회</h1>
+	<h3 name="h3">지금부터 가위바위보 대회를 개최합니다</h3>
+	<form action="RCPController" enctype="multipart/form-data">
+		<table id="rspTbl" border="1" width="600pt" align="center">
+			<tr>
+				 <td>
+                    <label style="cursor: pointer;">
+                        <input type="radio" name="choice" value="1" style="display:none;">
+                        <img src="1.JPG" width="200">
+                    </label>
+                </td>
+				 <td>
+                    <label style="cursor: pointer;">
+                        <input type="radio" name="choice" value="2" style="display:none;">
+                        <img src="2.JPG" width="200">
+                    </label>
+                </td>
+				 <td>
+                    <label style="cursor: pointer;">
+                        <input type="radio" name="choice" value="3" style="display:none;">
+                        <img src="3.JPG" width="200">
+                    </label>
+                </td>
+			</tr>
+			<tr align="center">
+				<td>가위</td>
+				<td>바위</td>
+				<td>보</td>
+			</tr>
+		</table> 
+			<div align="center">
+				<button type="submit">결과 확인</button>
+			</div>
+	</form>
+</body>
+</html>

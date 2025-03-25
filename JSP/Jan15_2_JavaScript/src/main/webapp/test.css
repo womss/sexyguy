@@ -1,0 +1,196 @@
+@charset "UTF-8";
+
+/* 웹폰트 설정 */
+@font-face {
+  font-family: "wide";
+  src: url("wide.TTF");
+}
+
+/* 공통 설정 */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #ece9e6, #ffffff);
+  color: #333;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  box-sizing: border-box;
+  transition: border 0.3s ease;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: #66afe9;
+  outline: none;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* 이메일 그룹 */
+.email-group {
+  display: flex;
+  align-items: center;
+}
+
+.email-group span {
+  margin: 0 5px;
+  color: #555;
+}
+
+/* 취미 선택 */
+.hobbies {
+  display: flex;
+  flex-wrap: wrap; /* 행 넘김 허용 */
+  gap: 10px; /* 요소 간 간격 */
+}
+
+/* 체크박스 숨기기 */
+.hobbies input[type="checkbox"] {
+  display: none;
+}
+
+/* 기본 스타일 */
+.hobbies label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(33.33% - 10px); /* 3열 배치 */
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* 선택 시 효과 */
+.hobbies input[type="checkbox"]:checked + label {
+  border-color: #5b9bd5;
+  background-color: #e8f4fc;
+  box-shadow: 0 0 10px rgba(91, 155, 213, 0.6); /* 은은한 불빛 */
+  color: #0056b3;
+}
+
+/* 폼 액션 */
+.form-actions {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  margin: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button[type="submit"]:hover {
+  background-color: #218838;
+}
+
+button[type="reset"] {
+  background-color: #ffc107;
+  color: #fff;
+}
+
+button[type="reset"]:hover {
+  background-color: #e0a800;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

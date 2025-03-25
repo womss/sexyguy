@@ -1,0 +1,80 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/BeaverValidChecker.js"></script>
+<script type="text/javascript" src="js/Check.js"></script>
+</head>
+<body>
+<form action="" name="loginForm" onsubmit="return signUpCheck();">
+    <table id="signupTbl">
+        <!-- 아이디 -->
+        <tr class="tr1">
+            <td><input name="id" autocomplete="off" placeholder="ID" autofocus></td>
+        </tr>
+        <!-- 비밀번호 -->
+        <tr class="tr1">
+            <td><input name="pw" type="password" autocomplete="off" placeholder="PASSWORD"></td>
+        </tr>
+        <!-- 비밀번호 확인 -->
+        <tr class="tr1">
+            <td><input name="pwc" type="password" autocomplete="off" placeholder="PASSWORD Check"></td>
+        </tr>
+        <!-- 이름 -->
+        <tr class="tr1">
+            <td><input name="name" autocomplete="off" placeholder="Name"></td>
+        </tr>
+        <!-- 전화번호 -->
+        <tr class="tr1">
+            <td><input name="phone" autocomplete="off" placeholder="Phone Number"></td>
+        </tr>
+        <!-- 생년월일 -->
+        <tr class="tr2">
+            <td>생년월일</td>
+        </tr>
+         <tr>
+                <td>
+                    <label></label>
+                    <select name="year">
+                        <option value="choice">선택</option>
+                        ${years}
+                    </select>년
+
+                    <label></label>
+                    <select name="month">
+                        <option value="choice">선택</option>
+                        <c:forEach begin="1" end="12" var="month">
+                            <option value="${month}">${month}</option>
+                        </c:forEach>
+                    </select>월
+
+                    <label></label>
+                    <select name="day">
+                        <option value="choice">선택</option>
+                        <c:forEach begin="1" end="31" var="day">
+                            <option value="${day}">${day}</option>
+                        </c:forEach>
+                    </select>일
+                </td>
+            </tr>
+        <!-- 파일 업로드 -->
+        <tr>
+            <td>
+                <input type="file" name="file" multiple accept="image/jpeg, image/jpg, application/pdf">
+            </td>
+        </tr>
+        <!-- 제출 버튼 -->
+        <tr>
+            <td align="center">
+                <button type="submit">Sign Up</button>
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

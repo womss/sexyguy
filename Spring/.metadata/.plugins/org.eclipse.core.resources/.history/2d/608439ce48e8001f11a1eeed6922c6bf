@@ -1,0 +1,9 @@
+package com.beaver.feb113.conversion;
+
+public class Conversion {
+	private double inch;
+	private double pyeong;
+	private String f;
+	private double km;
+	
+}

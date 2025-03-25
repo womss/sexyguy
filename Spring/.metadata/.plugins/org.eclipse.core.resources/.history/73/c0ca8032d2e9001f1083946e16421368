@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+
+
+</style>
+<script type="text/javascript" src="jQuery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		// Javascript
+		//		배열 : 대괄호 []
+		//		객체 : 중괄호 {}
+		let arr = [1, 56, 3, 86, 123];
+		let obj = {menu: "초밥", price: 15000}
+		
+	});
+
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

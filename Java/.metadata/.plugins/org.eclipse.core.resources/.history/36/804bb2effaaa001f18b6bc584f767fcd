@@ -1,0 +1,50 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class FMain4 {
+	// 홀짝 (함수.ver)
+	//홀인지 짝인지 입력
+	//컴퓨터가 숫자 공개
+	// 맞추면 맞췄다고 결과공개
+	
+	
+	public static String bat () {
+		Scanner k = new Scanner(System.in);
+		System.out.println("홀 짝 게임을 시작합니다\n선택해 주세요 : 홀 짝");
+		String bat = k.next();
+		return bat;
+		
+		}
+	
+	public static void daice() {
+		Random r = new Random();
+		int n = r.nextInt(10)+1;
+		
+		
+	}
+	
+	public static void result(String batw) {
+		String result = (batw.equals(batw) ? "배팅에 성공하셨습니다": "배팅에 실패하셨습니다"	);
+		
+	}
+	
+	
+	
+	public static void main(String[] args) {
+		bat();
+		String batw = bat();
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,8 @@
+package com.beaver.feb171.fruit;
+
+public class fruit {
+	private String f_name;
+	private int f_price;
+	
+	
+}

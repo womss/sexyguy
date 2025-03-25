@@ -1,0 +1,57 @@
+package com.beaver.feb113.calc;
+
+import javax.servlet.http.HttpServletRequest;
+
+import com.beaver.feb113.calc.CalcResult;
+
+public class CalcDAO {
+	
+	public String void calcTrans() {
+		public void calculate(CalcResult cr, HttpServletRequest req) {
+			double x = Double.parseDouble(req.getParameter("on"));
+			
+			
+			
+			
+		}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

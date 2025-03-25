@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!--
+		아무값 하나 입력한 후 버튼을 눌러서
+		Output으로 GET방식의 요청을 하면
+		입력한 값이 새로운(html) 화면에 출력이 되도록
+		
+		name="a" 빼먹음
+		<a> 태그는 무조건 겟방식o 포스트방식 안됨x
+	-->
+	<form action="Output" method="post">
+		입력 :<input name="a">
+		<hr>
+		<button>Output으로 가기</button> <br><br>
+		<input type="submit" value="이게 기본임"> <br><br>
+		<input type="image"> <br><br>
+		<input type="reset"> <br><br>
+	</form>
+	<!--
+		form속에 있는
+			원래 : <input type="submit"> 누르면
+			진화 : 버튼 모양인거 아무거나 누르면 액션쪽으로 요청
+				ex) <input type="button" or "image", ...>
+				cf) type="reset" 만 빼고!!!!
+		action 속성에 쓴 쪽으로 요청
+	-->
+</body>
+</html>

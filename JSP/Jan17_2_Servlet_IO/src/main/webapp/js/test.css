@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "wide"; 
+	src: url("wide.TTF"); 
+	/* 위 경로는 상대경로*/
+}
+::-webkit-scrollbar {
+	display: none;
+}
+body {
+	background-image: url("winter,jpg");
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "wide";
+}
+
+#resultTbl {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+	background-color: #FF999930;
+	width: 500px;
+	height: 500px;
+	border: white solid 5px;
+	border-radius: 10px;
+}
+
+#resultTbl th {
+	font-size: 30pt;
+	color: teal;
+	text-shadow: white 3px 5px 5px;
+}
+
+#resultTbl .td1 {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20pt;
+	color: teal;
+	font-weight: 600;
+	text-shadow: white 3px 5px 5px;
+}
+
+#resultTbl .td2 {
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 20pt;
+	color: teal;
+	font-weight: 600;
+	text-shadow: white 3px 5px 5px;
+}
+
+#resultTbl .td3 {
+	font-size: 25pt;
+	font-weight: 600;
+	text-shadow: white 3px 5px 5px;
+}
+
+
+
+
+
+
+

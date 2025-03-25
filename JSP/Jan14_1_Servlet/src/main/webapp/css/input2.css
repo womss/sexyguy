@@ -1,0 +1,90 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "wide"; /* 폰트 불러올 이름 */
+	src: url("wide.ttf");
+}
+::-webkit-scrollbar {
+	display: none;
+}
+body {
+	font-family: "wide";
+	
+	/* html 기본 여백 없애기 */
+	/* margin : 바깥쪽 여백 / padding: 안쪽 여백 */
+}
+.main {
+	width: 300px;
+	height: 100px;
+	border: burlywood solid 5px;
+	border-radius: 10px;
+	background-color: antiquewhite;
+	margin: 0 auto;
+	margin-top: 300px;
+}
+/* 여기 안됨 */
+.main  td{
+	color: black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

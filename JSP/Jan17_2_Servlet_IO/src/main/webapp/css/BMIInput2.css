@@ -1,0 +1,143 @@
+@charset "UTF-8";
+@font-face {
+	font-family: "wide"; 
+	src: url("wide.TTF"); 
+	/* 위 경로는 상대경로*/
+}
+::-webkit-scrollbar {
+	display: none;
+}
+body {
+	font-family: "wide";
+	background-image: url("5up t.jpg");
+	/* 백그라운드 정렬은 없나?*/
+}
+
+#bmiTbl {
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	background-color: #FF999930;
+	width: 700px;
+	height: 700px;
+	border: white solid 5px;
+	border-radius: 10px;
+}
+
+#bmiTbl th {
+	font-size: 30pt;
+	color: teal;
+	text-shadow: white 3px 5px 5px;
+}
+
+#bmiTbl td {
+	width: 50%;
+	font-size: 20pt;
+	font-weight: 600;
+	text-align: center;
+	color: teal;
+	text-shadow: white 3px 5px 5px;
+}
+
+/* input박스 건들기 */
+#bmiTbl .textType {
+	margin-bottom: auto;
+	outline: none;
+	text-align: center;
+	border: white solid 3px;
+	border-radius: 7px;
+	background-color: transparent;
+	font-size: 15pt;	
+	font-family: "wide";
+}
+
+#bmiTbl .textType::focus {
+	font-size: 15pt;
+	font-family: "wide";
+}
+
+#bmiTbl .textType::placeholder {
+	color: teal;
+	font-weight: 500;
+}
+
+#bmiTbl .photoType {
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "wide";
+	color: teal;
+	font-size: 15pt;
+	width: 230px;
+}
+/* 파일선택박스 수정하는 법 */
+input[type=file]::file-selector-button {
+	border: white solid 3px;
+	border-radius: 10px;
+	font-family: "wide";
+	background-color: transparent;
+	cursor: pointer;
+	color: teal;
+}
+
+input[type=file]::file-selector-button:hover {
+	background-color: black;
+	color: white;
+}
+
+#bmiTbl button {
+	background-color: transparent;
+	border: white;
+	font-family: "wide";
+	font-size: 20pt;
+	font-weight: 600;
+	text-shadow: white 3px 5px 5px;
+	cursor: pointer;
+}
+
+#bmiTbl button:hover {
+	text-decoration: underline;
+	font-family: "wide";
+	color: black;
+	font-size: 20pt;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

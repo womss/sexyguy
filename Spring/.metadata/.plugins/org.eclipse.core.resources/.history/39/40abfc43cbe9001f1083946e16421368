@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	img {
+		position: fixed;
+		transition: all 0.5 ease-out;
+	}
+
+</style>
+<script type="text/javascript" src="jQuert.js"></script>
+<script type="text/javascript">
+	$(function() {
+		alert('asdf');
+		
+		// setInterval : JavaScript의 반복 함수
+		//				일정한 시간 간격으로 코드를 반복실행
+		setInterval(() => {
+			
+		}, 1000);
+	});
+
+
+
+</script>
+</head>
+<body>
+	<img src="cal.png">
+</body>
+</html>

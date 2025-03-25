@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function goHahaha() { // 인풋 아이디 ii에 접근하는 방법은
+		// document : 이 html문서
+		let iiInput = document.getElementById("ii"); // id가 ii인 것
+		// id인것 말고도
+		// document.getElementByClass("ii"); // class가 ii인 클래스에 접근 가능
+		// document.getElementByTagName("input"); // 특정 태그명에도 접근 가능
+		
+		let iiInputVal = iiInput.value; // 입력한 값이 나오게
+		// alert(iiInputVal);
+		// alert(iiInput.value);
+		location.href = "ㅋㅋㅋ?ii=" + iiInputVal;
+	}
+</script>
+</head>
+<body>
+	<!--
+		input에다 뭔가를 입력하고
+		button을 더블클릭하면 ㅋㅋㅋ?ii=입력받은값 으로 GET방식 요청(하고싶다)
+		
+		<form> : 입력받아서 요청할 때 필수품 - X
+		<form> : 입력받아서 요청할 때 편함 - O ***
+		
+		주소 입력					- GET 
+		<a> 태그					- GET
+		<form> + <button>		- GET / POST
+		JavaScript				- GET
+	-->
+	<input id="ii">
+	<button ondblclick="goHahaha();">확인</button>
+</body>
+</html>

@@ -1,0 +1,26 @@
+
+2월 11, 2025 09:32:40.220 NEW SESSION
+2월 11, 2025 09:32:40.220 [11712:4196:0211/093240.219:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+2월 11, 2025 09:32:40.549 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 11, 2025 09:34:24.575 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 11, 2025 09:34:24.856 [5512:13984:0211/093424.855:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+2월 11, 2025 09:42:01.361 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 11, 2025 09:42:01.641 [11684:1608:0211/094201.641:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+2월 11, 2025 09:42:30.192 [11684:1608:0211/094230.191:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+2월 11, 2025 09:43:28.414 [11684:1608:0211/094328.414:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+2월 11, 2025 09:44:57.916 [11684:7692:0211/094457.916:ERROR:service_client.cc(36)] Unexpected on_device_model service disconnect: The device's GPU is not supported.
+2월 11, 2025 09:45:11.629 [11684:1608:0211/094511.629:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+2월 11, 2025 09:47:54.615 [11684:1608:0211/094754.614:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+2월 11, 2025 09:54:40.147 [11684:1608:0211/095440.146:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+2월 11, 2025 11:15:52.392 [11684:7692:0211/111552.391:ERROR:interface_endpoint_client.cc(725)] Message 1 rejected by interface blink.mojom.WidgetHost
+
+2월 14, 2025 09:30:42.96 NEW SESSION
+2월 14, 2025 09:30:42.96 Created TensorFlow Lite XNNPACK delegate for CPU.
+2월 14, 2025 09:30:43.08 [12948:2832:0214/093043.088:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+2월 14, 2025 09:31:10.52 [12948:2832:0214/093110.520:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+2월 14, 2025 09:31:51.34 [12948:2832:0214/093151.341:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+2월 14, 2025 09:33:23.92 [12948:2832:0214/093323.928:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+2월 14, 2025 09:33:40.25 [12948:6812:0214/093340.252:ERROR:service_client.cc(36)] Unexpected on_device_model service disconnect: The device's GPU is not supported.
+2월 14, 2025 09:37:16.00 [12948:2832:0214/093716.001:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+2월 14, 2025 09:43:25.37 [12948:2832:0214/094325.374:ERROR:registration_request.cc(291)] Registration response error message: DEPRECATED_ENDPOINT
+2월 14, 2025 17:26:34.23 [12948:6812:0214/172634.236:ERROR:interface_endpoint_client.cc(725)] Message 1 rejected by interface blink.mojom.WidgetHost

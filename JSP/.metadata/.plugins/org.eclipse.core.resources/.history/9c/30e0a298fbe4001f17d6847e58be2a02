@@ -1,0 +1,30 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- css 아직 안 만듬 -->
+</head>
+<body>
+	<table id="loginsuccess">
+		<tr>
+			<td rowspan="2"><img src="img/${sessionScope.loginMember.photo }"> <!-- 세션에 있는걸 가져올때는 {세션스코프.속성.뭘가져올지} -->
+			</td>
+			<td>
+				${sessionScope.loginMember.id }
+			</td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2">어서오세요</td>
+		</tr>
+		<tr>
+			<td align="center" colspan="2">
+				<button>정보</button>
+				<button>로그아웃</button>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

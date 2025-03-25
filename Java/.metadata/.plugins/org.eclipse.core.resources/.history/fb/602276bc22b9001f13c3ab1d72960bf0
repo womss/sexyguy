@@ -1,0 +1,31 @@
+package com.beaver.dec136.register;
+
+public class Student extends Academy {
+	private int num;
+	
+	public Student() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Student(String name, int age, int num) {
+		super(name, age);
+		this.num = num;
+	}
+
+	public int getNum() {
+		return num;
+	}
+
+	public void setNum(int num) {
+		if (num != 0) {
+			this.num += num;
+			System.out.println(this.num);
+			
+		}
+		
+	}
+	
+	public void printInfo() {
+		System.out.println(num);
+	}
+}

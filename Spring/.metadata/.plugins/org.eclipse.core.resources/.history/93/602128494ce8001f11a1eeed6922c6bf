@@ -1,0 +1,79 @@
+package com.beaver.feb113.calc;
+
+public class CalcResult {
+	private double on;
+	private double inch;
+	private double pyeong;
+	private String f;
+	private double km;
+	
+	
+	public CalcResult() {
+		// TODO Auto-generated constructor stub
+	}
+
+
+	public CalcResult(double on, double inch, double pyeong, String f, double km) {
+		super();
+		this.on = on;
+		this.inch = inch;
+		this.pyeong = pyeong;
+		this.f = f;
+		this.km = km;
+	}
+
+
+	public double getOn() {
+		return on;
+	}
+
+
+	public void setOn(double on) {
+		this.on = on;
+	}
+
+
+	public double getInch() {
+		return inch;
+	}
+
+
+	public void setInch(double inch) {
+		this.inch = inch;
+	}
+
+
+	public double getPyeong() {
+		return pyeong;
+	}
+
+
+	public void setPyeong(double pyeong) {
+		this.pyeong = pyeong;
+	}
+
+
+	public String getF() {
+		return f;
+	}
+
+
+	public void setF(String f) {
+		this.f = f;
+	}
+
+
+	public double getKm() {
+		return km;
+	}
+
+
+	public void setKm(double km) {
+		this.km = km;
+	}
+	
+	
+	
+	
+	
+}

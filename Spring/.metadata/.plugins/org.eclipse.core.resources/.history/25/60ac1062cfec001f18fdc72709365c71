@@ -1,0 +1,14 @@
+package com.beaver.feb171.fruit;
+
+import java.util.List;
+
+import com.beaver.feb122.student.Student;
+
+public interface FruitMapper {
+	
+	
+	
+	
+	
+	public abstract List<Fruit> getAllFruit();
+}

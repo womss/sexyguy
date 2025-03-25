@@ -1,0 +1,625 @@
+!SESSION 2025-02-04 17:05:54.350 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-02-04 17:07:04.803
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-04 17:07:05.119
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-04 17:07:40.340
+!MESSAGE Logback config file: C:\Users\sdedu\Desktop\workspace\Python\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2025-02-04 17:07:44.037
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-02-04 17:07:44.037
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-02-04 17:07:48.369
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\sdedu'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2025-02-04 17:12:49.658
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://download.eclipse.org/technology/m2e/releases/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:405)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:388)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:279)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:520)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:126)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:110)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$1.runModal(PreloadingRepositoryHandler.java:84)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2025-02-04 17:12:49.659
+!MESSAGE No repository found at http://download.eclipse.org/technology/m2e/releases/.
+
+!ENTRY org.eclipse.equinox.p2.core 4 0 2025-02-04 17:14:23.465
+!MESSAGE Provisioning exception
+!STACK 1
+org.eclipse.equinox.p2.core.ProvisionException: No repository found at http://dl.bintray.com/testng-team/testng-p2-release/.
+	at org.eclipse.equinox.internal.p2.repository.helpers.AbstractRepositoryManager.fail(AbstractRepositoryManager.java:405)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.oomph.util.ReflectUtil.invokeMethod(ReflectUtil.java:119)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.fail(CachingRepositoryManager.java:388)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager.loadRepository(CachingRepositoryManager.java:279)
+	at org.eclipse.oomph.p2.internal.core.CachingRepositoryManager$Metadata.loadRepository(CachingRepositoryManager.java:520)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:110)
+	at org.eclipse.equinox.internal.p2.metadata.repository.MetadataRepositoryManager.loadRepository(MetadataRepositoryManager.java:105)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.doLoad(LoadMetadataRepositoryJob.java:126)
+	at org.eclipse.equinox.p2.ui.LoadMetadataRepositoryJob.runModal(LoadMetadataRepositoryJob.java:110)
+	at org.eclipse.equinox.internal.p2.ui.sdk.PreloadingRepositoryHandler$1.runModal(PreloadingRepositoryHandler.java:84)
+	at org.eclipse.equinox.p2.operations.ProvisioningJob.run(ProvisioningJob.java:188)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.equinox.p2.metadata.repository 4 1000 2025-02-04 17:14:23.465
+!MESSAGE No repository found at http://dl.bintray.com/testng-team/testng-p2-release/.
+
+!ENTRY org.eclipse.equinox.p2.repository 2 0 2025-02-04 17:22:33.750
+!MESSAGE The digest algorithms (md5) used to verify osgi.bundle,javaewah,1.1.6.v20160919-1400 have severely compromised security. Please report this concern to the artifact provider.
+!SESSION 2025-02-04 17:23:55.538 -----------------------------------------------
+eclipse.buildId=4.29.0.20230907-1200
+java.version=17.0.8.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=ko_KR
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data file:/C:/Users/sdedu/Desktop/workspace/Python/ -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.emf.ecore 2 0 2025-02-04 17:24:02.080
+!MESSAGE Both 'org.eclipse.jst.j2ee.core' and 'org.eclipse.jst.j2ee.core' register a package for 'application.xmi'
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-04 17:24:02.352
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2025-02-04 17:24:06.134
+!MESSAGE Logback config file: C:\Users\sdedu\Desktop\workspace\Python\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.2.0.20230625-0847.xml
+
+!ENTRY org.eclipse.jface 2 0 2025-02-04 17:24:08.071
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2025-02-04 17:24:08.072
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.jdt.ui.navigate.open.type"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		WorkbenchHandlerServiceHandler("org.eclipse.lsp4e.symbolinworkspace"),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.egit.ui 2 0 2025-02-04 17:24:12.050
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\sdedu'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.python.pydev.shared_core 4 4 2025-02-04 17:25:14.438
+!MESSAGE Unable to make private static native long[] java.util.prefs.WindowsPreferences.WindowsRegOpenKey(long,byte[],int) accessible: module java.prefs does not "opens java.util.prefs" to unnamed module @3db8bbbe
+!STACK 0
+java.lang.reflect.InaccessibleObjectException: Unable to make private static native long[] java.util.prefs.WindowsPreferences.WindowsRegOpenKey(long,byte[],int) accessible: module java.prefs does not "opens java.util.prefs" to unnamed module @3db8bbbe
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:354)
+	at java.base/java.lang.reflect.AccessibleObject.checkCanSetAccessible(AccessibleObject.java:297)
+	at java.base/java.lang.reflect.Method.checkCanSetAccessible(Method.java:199)
+	at java.base/java.lang.reflect.Method.setAccessible(Method.java:193)
+	at at.jta.Regor.initMethods(Regor.java:1548)
+	at at.jta.Regor.<init>(Regor.java:264)
+	at org.python.pydev.ui.pythonpathconf.PythonInterpreterProviderFactory.getInterpreterProviders(PythonInterpreterProviderFactory.java:54)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker$3.run(AutoConfigMaker.java:482)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker.getAllProviders(AutoConfigMaker.java:479)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker.getPossibleInterpreters(AutoConfigMaker.java:464)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker.autoConfigSearch(AutoConfigMaker.java:204)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker.autoConfigSingleApply(AutoConfigMaker.java:123)
+	at org.python.pydev.ui.PyProjectPythonDetails$ProjectInterpreterAndGrammarConfig$2.widgetSelected(PyProjectPythonDetails.java:326)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendSelectionEvent(Widget.java:1107)
+	at org.eclipse.swt.widgets.Link.wmNotifyChild(Link.java:725)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5798)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5366)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Link.callWindowProc(Link.java:162)
+	at org.eclipse.swt.widgets.Widget.wmLButtonUp(Widget.java:2025)
+	at org.eclipse.swt.widgets.Control.WM_LBUTTONUP(Control.java:5179)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4781)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.actions.NewProjectAction.run(NewProjectAction.java:119)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper$1.linkActivated(EmptyWorkspaceHelper.java:284)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleActivate(AbstractHyperlink.java:215)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleMouseUp(AbstractHyperlink.java:309)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.lambda$3(AbstractHyperlink.java:117)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.python.pydev.shared_core 1 1 2025-02-04 17:25:14.741
+!MESSAGE - Ok, file is non-null. Getting info on:C:\Users\sdedu\AppData\Local\Programs\Python\Python312\python.exe
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing: C:\Users\sdedu\AppData\Local\Programs\Python\Python312\python.exe -u C:\Users\sdedu\Desktop\eclipse-jee-2023-09-R-win32-x86_64\eclipse\plugins\org.python.pydev.core_12.2.0.202409031913\pysrc\interpreterInfo.py
+- Setting task name:Making pythonpath environment...C:\Users\sdedu\AppData\Local\Programs\Python\Python312\python.exe -u C:\Users\sdedu\Desktop\eclipse-jee-2023-09-R-win32-x86_64\eclipse\plugins\org.python.pydev.core_12.2.0.202409031913\pysrc\interpreterInfo.py
+- Setting task name:Making exec...C:\Users\sdedu\AppData\Local\Programs\Python\Python312\python.exe -u C:\Users\sdedu\Desktop\eclipse-jee-2023-09-R-win32-x86_64\eclipse\plugins\org.python.pydev.core_12.2.0.202409031913\pysrc\interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.12</version>
+<executable>C:\Users\sdedu\AppData\Local\Programs\Python\Python312\python.exe</executable>
+<vmArgs>-Xfrozen_modules=off</vmArgs>
+<lib>C:\Users\sdedu\AppData\Local\Programs\Python\Python312\DLLs</lib>
+<lib>C:\Users\sdedu\AppData\Local\Programs\Python\Python312\Lib</lib>
+<lib>C:\Users\sdedu\AppData\Local\Programs\Python\Python312</lib>
+<lib>C:\Users\sdedu\AppData\Local\Programs\Python\Python312\Lib\site-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_abc</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_blake2</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_contextvars</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_opcode</forced_lib>
+<forced_lib>_operator</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha2</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha3</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_signal</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_stat</forced_lib>
+<forced_lib>_statistics</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_tokenize</forced_lib>
+<forced_lib>_tracemalloc</forced_lib>
+<forced_lib>_typing</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winapi</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>_xxinterpchannels</forced_lib>
+<forced_lib>_xxsubinterpreters</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>py</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>random</forced_lib>
+<forced_lib>re</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>winreg</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>312</value></string_substitution_var>
+</xml>
+
+!STACK 0
+java.lang.RuntimeException: - Ok, file is non-null. Getting info on:C:\Users\sdedu\AppData\Local\Programs\Python\Python312\python.exe
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing: C:\Users\sdedu\AppData\Local\Programs\Python\Python312\python.exe -u C:\Users\sdedu\Desktop\eclipse-jee-2023-09-R-win32-x86_64\eclipse\plugins\org.python.pydev.core_12.2.0.202409031913\pysrc\interpreterInfo.py
+- Setting task name:Making pythonpath environment...C:\Users\sdedu\AppData\Local\Programs\Python\Python312\python.exe -u C:\Users\sdedu\Desktop\eclipse-jee-2023-09-R-win32-x86_64\eclipse\plugins\org.python.pydev.core_12.2.0.202409031913\pysrc\interpreterInfo.py
+- Setting task name:Making exec...C:\Users\sdedu\AppData\Local\Programs\Python\Python312\python.exe -u C:\Users\sdedu\Desktop\eclipse-jee-2023-09-R-win32-x86_64\eclipse\plugins\org.python.pydev.core_12.2.0.202409031913\pysrc\interpreterInfo.py
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Process finished.
+- Success getting the info. Result:<xml>
+<name>python</name>
+<version>3.12</version>
+<executable>C:\Users\sdedu\AppData\Local\Programs\Python\Python312\python.exe</executable>
+<vmArgs>-Xfrozen_modules=off</vmArgs>
+<lib>C:\Users\sdedu\AppData\Local\Programs\Python\Python312\DLLs</lib>
+<lib>C:\Users\sdedu\AppData\Local\Programs\Python\Python312\Lib</lib>
+<lib>C:\Users\sdedu\AppData\Local\Programs\Python\Python312</lib>
+<lib>C:\Users\sdedu\AppData\Local\Programs\Python\Python312\Lib\site-packages</lib>
+<forced_lib>Image</forced_lib>
+<forced_lib>OpenGL</forced_lib>
+<forced_lib>_abc</forced_lib>
+<forced_lib>_ast</forced_lib>
+<forced_lib>_bisect</forced_lib>
+<forced_lib>_blake2</forced_lib>
+<forced_lib>_bytesio</forced_lib>
+<forced_lib>_codecs</forced_lib>
+<forced_lib>_codecs_cn</forced_lib>
+<forced_lib>_codecs_hk</forced_lib>
+<forced_lib>_codecs_iso2022</forced_lib>
+<forced_lib>_codecs_jp</forced_lib>
+<forced_lib>_codecs_kr</forced_lib>
+<forced_lib>_codecs_tw</forced_lib>
+<forced_lib>_collections</forced_lib>
+<forced_lib>_contextvars</forced_lib>
+<forced_lib>_csv</forced_lib>
+<forced_lib>_datetime</forced_lib>
+<forced_lib>_fileio</forced_lib>
+<forced_lib>_functools</forced_lib>
+<forced_lib>_heapq</forced_lib>
+<forced_lib>_hotshot</forced_lib>
+<forced_lib>_imp</forced_lib>
+<forced_lib>_io</forced_lib>
+<forced_lib>_json</forced_lib>
+<forced_lib>_locale</forced_lib>
+<forced_lib>_lsprof</forced_lib>
+<forced_lib>_md5</forced_lib>
+<forced_lib>_multibytecodec</forced_lib>
+<forced_lib>_opcode</forced_lib>
+<forced_lib>_operator</forced_lib>
+<forced_lib>_pickle</forced_lib>
+<forced_lib>_random</forced_lib>
+<forced_lib>_sha</forced_lib>
+<forced_lib>_sha1</forced_lib>
+<forced_lib>_sha2</forced_lib>
+<forced_lib>_sha256</forced_lib>
+<forced_lib>_sha3</forced_lib>
+<forced_lib>_sha512</forced_lib>
+<forced_lib>_signal</forced_lib>
+<forced_lib>_sre</forced_lib>
+<forced_lib>_stat</forced_lib>
+<forced_lib>_statistics</forced_lib>
+<forced_lib>_string</forced_lib>
+<forced_lib>_struct</forced_lib>
+<forced_lib>_subprocess</forced_lib>
+<forced_lib>_symtable</forced_lib>
+<forced_lib>_thread</forced_lib>
+<forced_lib>_tokenize</forced_lib>
+<forced_lib>_tracemalloc</forced_lib>
+<forced_lib>_typing</forced_lib>
+<forced_lib>_warnings</forced_lib>
+<forced_lib>_weakref</forced_lib>
+<forced_lib>_winapi</forced_lib>
+<forced_lib>_winreg</forced_lib>
+<forced_lib>_xxinterpchannels</forced_lib>
+<forced_lib>_xxsubinterpreters</forced_lib>
+<forced_lib>array</forced_lib>
+<forced_lib>atexit</forced_lib>
+<forced_lib>audioop</forced_lib>
+<forced_lib>binascii</forced_lib>
+<forced_lib>builtins</forced_lib>
+<forced_lib>cPickle</forced_lib>
+<forced_lib>cStringIO</forced_lib>
+<forced_lib>cmath</forced_lib>
+<forced_lib>cv2</forced_lib>
+<forced_lib>datetime</forced_lib>
+<forced_lib>email</forced_lib>
+<forced_lib>errno</forced_lib>
+<forced_lib>exceptions</forced_lib>
+<forced_lib>faulthandler</forced_lib>
+<forced_lib>future_builtins</forced_lib>
+<forced_lib>gc</forced_lib>
+<forced_lib>gi</forced_lib>
+<forced_lib>hashlib</forced_lib>
+<forced_lib>imageop</forced_lib>
+<forced_lib>imp</forced_lib>
+<forced_lib>itertools</forced_lib>
+<forced_lib>marshal</forced_lib>
+<forced_lib>math</forced_lib>
+<forced_lib>mmap</forced_lib>
+<forced_lib>mock</forced_lib>
+<forced_lib>msvcrt</forced_lib>
+<forced_lib>multiprocessing</forced_lib>
+<forced_lib>mutagen</forced_lib>
+<forced_lib>nt</forced_lib>
+<forced_lib>numpy</forced_lib>
+<forced_lib>operator</forced_lib>
+<forced_lib>os</forced_lib>
+<forced_lib>os.path</forced_lib>
+<forced_lib>parser</forced_lib>
+<forced_lib>py</forced_lib>
+<forced_lib>pytest</forced_lib>
+<forced_lib>random</forced_lib>
+<forced_lib>re</forced_lib>
+<forced_lib>scipy</forced_lib>
+<forced_lib>signal</forced_lib>
+<forced_lib>six</forced_lib>
+<forced_lib>socket</forced_lib>
+<forced_lib>ssl</forced_lib>
+<forced_lib>strop</forced_lib>
+<forced_lib>sys</forced_lib>
+<forced_lib>thread</forced_lib>
+<forced_lib>time</forced_lib>
+<forced_lib>winreg</forced_lib>
+<forced_lib>wx</forced_lib>
+<forced_lib>wxPython</forced_lib>
+<forced_lib>xxsubtype</forced_lib>
+<forced_lib>zipimport</forced_lib>
+<forced_lib>zlib</forced_lib>
+<string_substitution_var><key>PY</key><value>312</value></string_substitution_var>
+</xml>
+
+	at org.python.pydev.core.log.Log.logInfo(Log.java:45)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker.applyOperation(AutoConfigMaker.java:191)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker.autoConfigSingleApply(AutoConfigMaker.java:128)
+	at org.python.pydev.ui.PyProjectPythonDetails$ProjectInterpreterAndGrammarConfig$2.widgetSelected(PyProjectPythonDetails.java:326)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:252)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendSelectionEvent(Widget.java:1107)
+	at org.eclipse.swt.widgets.Link.wmNotifyChild(Link.java:725)
+	at org.eclipse.swt.widgets.Control.wmNotify(Control.java:5798)
+	at org.eclipse.swt.widgets.Composite.wmNotify(Composite.java:1961)
+	at org.eclipse.swt.widgets.Control.WM_NOTIFY(Control.java:5366)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4800)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.CallWindowProc(Native Method)
+	at org.eclipse.swt.widgets.Link.callWindowProc(Link.java:162)
+	at org.eclipse.swt.widgets.Widget.wmLButtonUp(Widget.java:2025)
+	at org.eclipse.swt.widgets.Control.WM_LBUTTONUP(Control.java:5179)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4781)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(Native Method)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3658)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.eclipse.ui.actions.NewProjectAction.run(NewProjectAction.java:119)
+	at org.eclipse.ui.internal.views.helpers.EmptyWorkspaceHelper$1.linkActivated(EmptyWorkspaceHelper.java:284)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleActivate(AbstractHyperlink.java:215)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.handleMouseUp(AbstractHyperlink.java:309)
+	at org.eclipse.ui.forms.widgets.AbstractHyperlink.lambda$3(AbstractHyperlink.java:117)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+
+!ENTRY org.python.pydev.shared_core 1 1 2025-02-04 17:25:14.747
+!MESSAGE Restoring info for: C:\Users\sdedu\AppData\Local\Programs\Python\Python312\python.exe
+!STACK 0
+java.lang.RuntimeException: Restoring info for: C:\Users\sdedu\AppData\Local\Programs\Python\Python312\python.exe
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:458)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:284)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:581)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker$1.run(AutoConfigMaker.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: java.io.IOException: Expecting: C:\Users\sdedu\Desktop\workspace\Python\.metadata\.plugins\org.python.pydev\v1_a57ly61k4vzvsu8m4cj06xxvx\modulesKeys to exist (and be a file).
+	at org.python.pydev.ast.codecompletion.revisited.ModulesManager.loadFromFile(ModulesManager.java:342)
+	at org.python.pydev.ast.codecompletion.revisited.SystemModulesManager.load(SystemModulesManager.java:422)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:456)
+	... 4 more
+
+!ENTRY org.python.pydev.shared_core 1 1 2025-02-04 17:25:15.235
+!MESSAGE Finished restoring information for: C:\Users\sdedu\AppData\Local\Programs\Python\Python312\python.exe at: C:\Users\sdedu\Desktop\workspace\Python\.metadata\.plugins\org.python.pydev\v1_a57ly61k4vzvsu8m4cj06xxvx
+!STACK 0
+java.lang.RuntimeException: Finished restoring information for: C:\Users\sdedu\AppData\Local\Programs\Python\Python312\python.exe at: C:\Users\sdedu\Desktop\workspace\Python\.metadata\.plugins\org.python.pydev\v1_a57ly61k4vzvsu8m4cj06xxvx
+	at org.python.pydev.core.log.Log.logInfo(Log.java:45)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.getInterpretersFromPersistedString(AbstractInterpreterManager.java:503)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.internalRecreateCacheGetInterpreterInfos(AbstractInterpreterManager.java:284)
+	at org.python.pydev.ast.interpreter_managers.AbstractInterpreterManager.setInfos(AbstractInterpreterManager.java:581)
+	at org.python.pydev.ui.pythonpathconf.AutoConfigMaker$1.run(AutoConfigMaker.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.python.pydev.shared_core 4 4 2025-02-04 17:25:15.666
+!MESSAGE Info: Rebuilding internal caches: C:\Users\sdedu\Desktop\workspace\Python\.metadata\.plugins\com.python.pydev.analysis\python_v1_a57ly61k4vzvsu8m4cj06xxvx\python.pydevsysteminfo (Expected error to be provided and got no error!)
+
+!ENTRY org.python.pydev.shared_core 4 4 2025-02-04 17:25:40.865
+!MESSAGE Info: Rebuilding internal caches: C:\Users\sdedu\Desktop\workspace\Python\.metadata\.plugins\org.eclipse.core.resources\.projects\Test\com.python.pydev.analysis\AdditionalProjectInterpreterInfo.pydevinfo (Expected error to be provided and got no error!)
+
+!ENTRY org.eclipse.ui.ide 4 4 2025-02-04 17:26:38.936
+!MESSAGE Not properly disposed SWT resource
+!STACK 0
+java.lang.Error: SWT Resource was not properly disposed
+	at org.eclipse.swt.graphics.Resource.initNonDisposeTracking(Resource.java:172)
+	at org.eclipse.swt.graphics.Resource.<init>(Resource.java:120)
+	at org.eclipse.swt.graphics.Image.<init>(Image.java:195)
+	at org.python.pydev.overview_ruler.MinimapOverviewRuler.doPaint1(MinimapOverviewRuler.java:581)
+	at org.python.pydev.overview_ruler.CopiedOverviewRuler.doubleBufferPaint(CopiedOverviewRuler.java:654)
+	at org.python.pydev.overview_ruler.MinimapOverviewRuler.doubleBufferPaint(MinimapOverviewRuler.java:473)
+	at org.python.pydev.overview_ruler.CopiedOverviewRuler$3.paintControl(CopiedOverviewRuler.java:556)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:234)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Composite.WM_PAINT(Composite.java:1627)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4801)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:340)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5040)
+	at org.eclipse.swt.internal.win32.OS.RedrawWindow(Native Method)
+	at org.eclipse.swt.widgets.Control.update(Control.java:4588)
+	at org.eclipse.swt.widgets.Control.update(Control.java:4581)
+	at org.python.pydev.overview_ruler.CopiedOverviewRuler.redraw(CopiedOverviewRuler.java:826)
+	at org.python.pydev.overview_ruler.CopiedOverviewRuler$InternalListener.textChanged(CopiedOverviewRuler.java:89)
+	at org.eclipse.jface.text.TextViewer.updateTextListeners(TextViewer.java:2789)
+	at org.eclipse.jface.text.TextViewer.invalidateTextPresentation(TextViewer.java:3409)
+	at org.python.pydev.editor.PyEdit$6.run(PyEdit.java:1400)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.jface.window.Window.runEventLoop(Window.java:823)
+	at org.eclipse.jface.window.Window.open(Window.java:799)
+	at org.python.pydev.plugin.preferences.CheckDefaultPreferencesDialog$1.run(CheckDefaultPreferencesDialog.java:244)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:40)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:132)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4047)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3663)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1155)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1046)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:155)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:645)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:342)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:552)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:171)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:203)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:136)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:402)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:255)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)

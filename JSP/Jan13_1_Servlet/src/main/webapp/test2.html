@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!--
+		정수 x, y값을 요청파라미터에 넣고
+		?x=&y=
+		calculator로 GET방식의 요청을 했을 때,
+		두 정수값으로 계산한 사칙연산 결과를 <table>형태로 출력
+	-->
+	<a href="Calculator?x=10&y=5">10, 5 계산하기</a>
+	<hr>
+	<!--
+		form : form 내부에 있는 button을 누르면
+				action자리에 쓴 쪽으로 요청을 해줌
+				
+		form내부에 있는 input들의 속성으로 name을 줘서
+			=> name의 값이 요청파라미터명!
+		input들 안에 쓴 내용을 값으로 보내줌
+		
+		input입력시
+			tab키 : 다음 input으로 넘어가기
+			enter키 : 버튼을 누른겜 쳐줌
+		
+	-->
+	
+	
+	<form action="Calculator">
+		x : <input name="x"> <br>
+		y : <input name="y"> <p>
+		<button>계산</button>
+	</form>	
+	
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!--
+		회원가입 페이지
+		ID
+		PW
+		성별
+		지역
+			<select>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+		취미(복수선택 가능)
+		자기소개(textarea) + CSS까지
+		가입버튼 누르면 => 입력한 정보들이 새로운화면에 출력되게!
+									(Servlet)
+	-->
+	<form action="output14">
+		ID : <input name="id"><input type="reset"> <p>
+		PW : <input type="password" name="pw"> <p>
+		e-mail : <input name="email"> <p>
+		phone : <input name="phone"> <p>
+		성별 : <select name="gender">
+				<option>선택</option>
+				<option>남자</option>
+				<option>여자</option>
+				</select><p>
+		지역 : <select name="location">
+					<option>선택</option>
+					<option>서울</option>
+					<option>경기</option>
+					<option>시골</option>
+					<option>한국 밖</option><br>
+				</select>
+				<p>
+		사용 목적 : <select name="Purpose">
+				<option>선택</option>
+				<option>취미</option>
+				<option>공부</option>
+				<option>업무</option>
+				<option>교육</option>
+				</select>
+				<p>
+		취미 <p>
+			독서<input type="checkbox" name="hobby">
+			게임<input type="checkbox" name="hobby">
+			등산<input type="checkbox" name="hobby">
+			컴퓨터<input type="checkbox" name="hobby">
+			영화관람<input type="checkbox" name="hobby">
+			전시회관람<input type="checkbox" name="hobby">
+			여행<input type="checkbox" name="hobby">
+			요리<input type="checkbox" name="hobby">
+			운동<input type="checkbox" name="hobby">
+			봉사활동<input type="checkbox" name="hobby">
+				
+				
+		<input type="submit" value="가입하기"> <br><br>
+	</form>	
+	
+	
+	
+
+</body>
+</html>

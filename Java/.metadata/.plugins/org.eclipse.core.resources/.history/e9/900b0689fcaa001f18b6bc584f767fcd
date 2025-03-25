@@ -1,0 +1,81 @@
+import java.util.Random;
+import java.util.Scanner;
+
+public class FMain4 {
+	// 홀짝 (함수.ver)
+	//홀인지 짝인지 입력
+	//컴퓨터가 숫자 공개
+	// 맞추면 맞췄다고 결과공개
+	
+	
+	// 랜덤한 동전 갯수 가져오기
+	// 질문 & 답 입력
+	// 동전 갯수가 홀수면 '홀', 짝수면 '짝'
+	// 비교해서 결과 내기 위한 함수
+	// 결과 출력 함수
+	// 기능들 다 모아둔 함수
+	
+	public static String bat () {
+		Scanner k = new Scanner(System.in);
+		System.out.println("홀 짝 게임을 시작합니다\n선택해 주세요 : 홀 짝");
+		String bat = k.next();
+		return bat;
+		
+		}
+	
+	public static int daice() {
+		Random r = new Random();
+		int n = r.nextInt(10)+1;
+		System.out.printf("주사위 값은 : %d\n", n);
+		return n;
+		
+		
+	}
+	
+	public static String redaice(int daicenum) {
+		String redaice = (daicenum % 2 == 1 ? "홀" : "짝");
+		return redaice;
+		
+	}
+	
+	
+	public static String result(String redaice, String batw) {
+		String result = (redaice.equals(batw) ? "배팅에 성공하셨습니다": "배팅에 실패하셨습니다"	);
+		return result;
+	}
+	
+	
+//	public static void resultResult(int daicenum, String batw, String redaice, String bb ) {
+//		System.out.println("==================");
+//		System.out.printf("주사위 결과 %d\n", daicenum);
+//		System.out.printf("사용자 배팅 %d\n", batw);
+//		System.out.printf("주사위 홀짝 %d\n", redaice);
+//		System.out.printf("게 결과 %d\n", bb);
+//		
+//		System.out.println("==================");
+	
+	
+	public static void main(String[] args) {
+		
+		int daicenum = daice();
+		String batw = bat();
+		String redaice = redaice(daicenum);
+		String result = result(redaice, batw);
+		System.out.println(result);
+//		resultResult(daicenum,batw,redaice, bb );
+	}
+	
+	
+	
+	
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+

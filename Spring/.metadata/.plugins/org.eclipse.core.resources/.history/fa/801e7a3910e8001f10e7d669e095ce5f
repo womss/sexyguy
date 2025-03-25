@@ -1,0 +1,5 @@
+package com.beaver.feb111.member;
+
+public class MemberDAO {
+
+}

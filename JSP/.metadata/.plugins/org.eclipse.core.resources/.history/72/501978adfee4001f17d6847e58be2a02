@@ -1,0 +1,38 @@
+package com.beaver.feb061.sns;
+
+import java.io.IOException;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+@WebServlet("/membershipController")
+public class membershipController extends HttpServlet {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		MemberDAO.loginCheck(request);
+		DateManager.getCurYear(request);
+
+		// 현재 연도를 기준으로 100년치 데이터를 JSP로 전달
+		int currentYear = Integer.parseInt((String) request.getAttribute("cy"));
+		StringBuilder yearsBuilder = new StringBuilder();
+		for (int i = currentYear; i >= currentYear - 100; i--) { // 현재 년도부터 현재 년도의 100년전까지의 년마다
+			yearsBuilder.append("<option value=" + i + ">" + i + "</option>");
+		}
+		request.setAttribute("lp", "membership.jsp");
+		request.setAttribute("cp", "Login.jsp");
+		request.setAttribute("years", yearsBuilder.toString());
+
+		request.getRequestDispatcher("SNS.jsp").forward(request, response);
+		
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		MemberDAO.loginCheck(request);
+		MemberDAO.signup(request);
+		request.setAttribute("cp", "Login.jsp");
+		request.setAttribute("lp", "membership.jsp");
+		request.getRequestDispatcher("SNS.jsp").forward(request, response);
+	}
+
+}

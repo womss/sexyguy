@@ -1,0 +1,12 @@
+package com.beaver.feb122.student;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class StudentController {
+	
+
+	
+	
+	
+}

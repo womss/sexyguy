@@ -1,0 +1,27 @@
+package com.beaver.feb113.calc;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.beaver.feb113.calc.CalcResult;
+import com.beaver.feb113.calc.CalcDAO;
+
+public class CalcController {
+	@Autowired
+	private CalcDAO cDAO;
+
+	
+	@RequestMapping(value = "calculate.do", method = RequestMethod.POST)
+	public String	calcXY(CalcResult cr, HttpServletRequest req) {
+		CalcDAO cDAO = new CalcDAO();
+		cDAO.calculate(cr, req);
+		
+		return "index";
+	}
+	
+	
+	
+}

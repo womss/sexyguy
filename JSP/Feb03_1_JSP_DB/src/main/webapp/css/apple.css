@@ -1,0 +1,98 @@
+/* ✅ Google Fonts 활용 (세련된 폰트 적용) */
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
+
+body {
+    background: #f5f5f5;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* ✅ Apple 테이블 스타일 */
+#appleTbl {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 900px;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* ✅ 등록 버튼 스타일 */
+#appleTbl tr:first-child td {
+    background: #333;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+    text-align: right;
+}
+
+/* ✅ 등록 버튼 디자인 */
+.btn {
+    color: white;
+    background: #333;
+    padding: 8px 14px;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #555;
+}
+
+/* ✅ 테이블 헤더 스타일 */
+.table-header {
+    background: #444;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* ✅ 데이터 행 스타일 */
+.dataTr {
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.dataTr:hover {
+    background: #e0e0e0;
+}
+
+/* ✅ 각 행 기본 스타일 */
+#appleTbl td {
+    padding: 12px;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* ✅ 페이지 네비게이션 */
+.pagination {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.page-link {
+    color: #555;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 8px 12px;
+    margin: 0 5px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: 0.3s;
+}
+
+.page-link:hover {
+    background: #333;
+    color: white;
+}
+

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="C:\Users\sdedu\Desktop\workspace\JSP\Jan24_3_CustomTag"/>
+	</list>
+	<section name="NewWizardAction">
+		<item value="com.springsource.sts.wizard.template" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.m2e"/>
+			<item value="org.eclipse.pde.PDE"/>
+			<item value="org.springframework.ide.eclipse.beans.ui.wizards.category"/>
+			<item value="org.eclipse.team.svn.ui.repository"/>
+			<item value="org.eclipse.wst.web.ui"/>
+			<item value="org.eclipse.ui.Examples"/>
+			<item value="org.eclipse.ui.Examples/org.eclipse.uml2.examples.category"/>
+			<item value="org.eclipse.ui.Examples/org.eclipse.wst.xml.examples"/>
+		</list>
+	</section>
+</section>

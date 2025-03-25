@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<!--
+		회원가입 페이지
+		ID
+		PW
+		성별
+		지역
+			<select>
+				<option>1</option>
+				<option>2</option>
+				<option>3</option>
+				<option>4</option>
+		취미(복수선택 가능)
+		자기소개(textarea) + CSS까지
+		가입버튼 누르면 => 입력한 정보들이 새로운화면에 출력되게!
+									(Servlet)
+	-->
+	<form action="output14">
+		ID : <input name="id"><input type="reset"> <br>
+		PW : <input type="password" name="pw"> <p>
+		e-mail : <input name="email"> <p>
+		phone : <input name="phone"> <p>
+		성별 : <select name="gender">
+				<option>남자</option>
+				<option>여자</option>
+				</select><br>
+		지역 : <select name="location">
+					<option>서울</option>
+					<option>경기</option>
+					<option>시골</option>
+					<option>한국 밖</option><br>
+				</select>
+		사용 목적 : <select name="Purpose">
+				<option>취미</option>
+				<option>공부</option>
+				<option>업무</option>
+				<option>교육</option>
+				</select>
+		취미 : <select name="hobby" multiple>
+				<option>독서</option>
+				<option>게임</option>
+				<option>등산</option>
+				<option>컴퓨터</option>
+				<option>영화관람</option>
+				<option>전시회관람</option>
+				<option>여행</option>
+				<option>요리</option>
+				<option>운동</option>
+				<option>봉사활동</option><br>
+				
+		<input type="submit" value="가입하기"> <br><br>
+	</form>	
+	
+	
+	
+
+</body>
+</html>

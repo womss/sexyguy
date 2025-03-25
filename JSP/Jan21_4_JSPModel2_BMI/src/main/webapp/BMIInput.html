@@ -1,0 +1,22 @@
+<!-- V1.html -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="BeaverValidCheker.js"></script>
+<script type="text/javascript" src="BMICheck.js"></script>
+<link rel="stylesheet" href="BMI.css">
+</head>
+<body>
+	<h1>BMI 계산</h1>						<!-- 유효성 검사를 위한 온 서브밋 -->
+	<form action="HomeController" name="bmiform" method="POST" name="BMI" onsubmit="return check();" enctype="multipart/form-data">
+		이름 : <input name="name" placeholder="이름" autofocus autocomplete="off"> <p>
+		키 : <input name="height" placeholder="키(cm) : ex) 175.3" maxlength="5"> <p>
+		몸무게 : <input name="weight" placeholder="몸무게(kg) : ex)65.4" maxlength="5"> <p>
+		사진 : <input name="photo" type="file"> <p>
+		<button>계산</button>
+	</form>
+
+</body>
+</html>

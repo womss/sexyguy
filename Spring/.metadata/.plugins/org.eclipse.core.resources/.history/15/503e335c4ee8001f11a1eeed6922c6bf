@@ -1,0 +1,70 @@
+package com.beaver.feb113.calc;
+
+import javax.servlet.http.HttpServletRequest;
+
+import com.beaver.feb113.calc.CalcResult;
+
+public class CalcDAO {
+	
+	public static void calcTrans() {
+		
+	}
+		public double calculate(CalcResult cr, HttpServletRequest req) {
+			double x = Double.parseDouble(req.getParameter("on"));
+			String select = req.getParameter("select"); 
+			
+			if (select.equals("inch")) {
+				return (double)( x * 0.39370);
+			} else if (select.equals("pyeong")) {
+				return (double)( x * 0.3025);
+			} else if (select.equals("f")) {
+				return (double)(( x * 9/5) + 32 );
+			} else if (select.equals("km")) {
+				return (double)( x *  1.609344 );
+			}
+ 			return 0;
+			
+			
+			
+		}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
