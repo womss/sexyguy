@@ -7,21 +7,14 @@ function App() {
   let post = '강남 우동 맛집';
   let [글제목, b] = useState('남자 코트 추천');
   
-  
 
+  
   return (
     <div className="App">
       <div className="black-nav">
         <h4>블로그임</h4>
-        <h4>블로그임ㅇㅇ</h4>
-        <h4>블로그임?</h4>
-        <h4>차이점이 뭐임</h4>
-        <h4>나는 방금 첫 브랜치를 했다</h4>
-        <h4>나는 방금 app 브랜치에서 메브로 넘어오기 전
-            변경사항을 만들고 커밋한 후에 메브로 넘어왔다
-        </h4>
       </div>
-      <div className='list'>
+      <div className="list">
         <h4>{ 글제목 }</h4>
         <p>2월 17일 발행</p>
       </div>
